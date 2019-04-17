@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /cgi-bin/
+Disallow: /files/
+Sitemap: https://websites.karpolan.com/sitemap.xml

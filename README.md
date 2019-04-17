@@ -1,5 +1,12 @@
 # websites.karpolan.com
 
+Web application for list of [websites and web-application](https://websites.karpolan.com) created by Anton Karpenko aka [KARPOLAN](https://karpolan.com).
+
+## Made with Vue.js
+Application is built using [Vue
+JavaScript Framework](https://vuejs.org/)
+
+
 ## Project setup
 ```
 npm install

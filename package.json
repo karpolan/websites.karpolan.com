@@ -1,6 +1,19 @@
 {
   "name": "websites.karpolan.com",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Web application for websites.karpolan.com",
+  "keywords": [
+    "vue",
+    "website",
+    "product",
+    "karpolan"
+  ],
+  "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
+  "homepage": "https://websites.karpolan.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karpolan/websites.karpolan.com"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
