@@ -8,11 +8,11 @@
 
 <script>
 export default {
-  name: "SocialIcon",
-  props: {
-    link: String,
-    title: String,
-    icon: String,
+	name: 'SocialIcon',
+	props: {
+		link: String,
+		title: String,
+		icon: String,
 	},
 };
 </script>

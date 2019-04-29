@@ -1,4 +1,4 @@
-import Vue from "vue";
+import Vue from 'vue';
 
 // Bootstrap
 import BootstrapVue from 'bootstrap-vue';
@@ -10,18 +10,16 @@ Vue.use(BootstrapVue);
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
-
 // Application
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
-import "./registerServiceWorker";
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import './registerServiceWorker';
 
 Vue.config.productionTip = false;
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount("#app");
-
+	router,
+	store,
+	render: (h) => h(App),
+}).$mount('#app');
