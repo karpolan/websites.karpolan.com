@@ -1,6 +1,5 @@
 <template>
 	<div class="contact container text-left py-3">
-
 		<main>
 			<div class="row contact-info">
 				<div class="col-12">
@@ -25,14 +24,13 @@
 				<div class="col-12">
 					<h4>Social networks</h4>
 					<p>
-						We can also discuss web mastering and web-site development topics on social networks. 
-						I am registered under the name <b>KARPOLAN</b> almost everywhere. 
-					</p>	
-					<SocialIcons/>
+						We can also discuss web mastering and web-site development topics on social networks. I am registered under
+						the name <b>KARPOLAN</b> almost everywhere.
+					</p>
+					<SocialIcons />
 				</div>
 			</div>
 		</article>
-		
 	</div>
 </template>
 
