@@ -94,7 +94,7 @@ import SocialIcons from '@/components/SocialIcons.vue';
 import Contacts from '@/components/Contacts.vue';
 
 export default {
-	name: 'home',
+	name: 'about',
 	components: {
 		SocialIcons,
 		Contacts,
