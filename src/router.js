@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
-import About from './views/About.vue';
-import Contact from './views/Contact.vue';
-import NotFound from '@/views/NotFound.vue';
+import ProductList from '@/views/ProductList';
+import About from '@/views/About';
+import Contact from '@/views/Contact';
+import NotFound from '@/views/NotFound';
 
 Vue.use(Router);
 
@@ -14,7 +14,7 @@ export default new Router({
 		{
 			path: '/',
 			name: 'home',
-			component: Home,
+			component: ProductList,
 		},
 		{
 			path: '/contact',

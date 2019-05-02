@@ -16,7 +16,7 @@
 
 <script>
 import SocialIcon from './SocialIcon';
-import '../assets/social-colors.css'; // Colors for social icons
+import '@/assets/social-colors.css'; // Colors for social icons
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
