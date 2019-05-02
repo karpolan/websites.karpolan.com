@@ -1,12 +1,12 @@
 <template>
-	<div class="list container text-left py-3">
+	<div class="product-list container text-left py-3">
 		<main>
-			<article class="product-list">
+			<article>
 				<b-alert :show="error" variant="danger" role="alert">Data loading failed. Sorry for that :(</b-alert>
 
 				<Spinner :show="!loaded" />
 
-				<b-card-group v-if="loaded" columns>
+				<b-card-group v-if="loaded && !error" columns>
 					<ProductCard
 						v-for="item in items"
 						:key="item.id"
@@ -54,7 +54,8 @@ export default {
 				this.loaded = true;
 				this.error = true;
 			}
-			console.log(this.items);
+			// console.log('getDataCallBack() data: ', this.data);
+			// this.error = true;
 		},
 	},
 

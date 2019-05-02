@@ -37,7 +37,7 @@ export default {
 		link: String,
 	},
 	mounted() {
-		console.log(this.$props);
+		// console.log('mounted(), props: ', this.$props);
 	},
 };
 </script>

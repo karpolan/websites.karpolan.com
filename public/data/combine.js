@@ -28,7 +28,7 @@ glob('**/schema.json', {}, function (err, files) {
 		console.log('Processing "%s" file...', fileName);
 		const fileData = fs.readFileSync(fileName); 
 		const newObject = JSON.parse(fileData);
-		//console.log(index, fileName, newObject);
+		// console.log(index, fileName, newObject);
 
 		allObjects.push({
 			id: fileName.substring(0, fileName.indexOf("/")),

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import ProductList from '@/views/ProductList';
+import Product from '@/views/Product';
 import About from '@/views/About';
 import Contact from '@/views/Contact';
 import NotFound from '@/views/NotFound';
@@ -26,6 +27,7 @@ export default new Router({
 			name: 'about',
 			component: About,
 		},
+		{ path: '/:id', component: Product },
 		{ path: '*', component: NotFound },
 	],
 });
