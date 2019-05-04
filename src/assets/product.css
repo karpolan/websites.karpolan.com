@@ -13,9 +13,13 @@
 
 .product-icon {
 	width: 64px;
-	height: 64px;
 	float: left;
 	margin-right: 0.5em;
+}
+
+.product-thumb {
+	width: 100%;
+	margin-bottom: 0.5em;
 }
 
 .buttons .btn-toolbar {

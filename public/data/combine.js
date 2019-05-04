@@ -9,14 +9,14 @@ const fs = require('fs');
  * @param {String} s - String To Capitalize
  */
 const capitalizeString = (s) => {
-//	return s.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
-	return s.replace(/(?:^|\s)\S/g, (a) => a.toUpperCase() );
+	//	return s.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+	return s.replace(/(?:^|\s)\S/g, (a) => a.toUpperCase());
 };
 
 /**
  * Build "all.json" file with array of all "/abc-xyz/schema.json" files
  */
-glob('**/schema.json', {}, function (err, files) {
+glob('**/schema.json', {}, (err, files) => {
 	let allObjects = [];
 
 	if (err) {
@@ -26,32 +26,31 @@ glob('**/schema.json', {}, function (err, files) {
 
 	files.map((fileName, index) => {
 		console.log('Processing "%s" file...', fileName);
-		const fileData = fs.readFileSync(fileName); 
+		const fileData = fs.readFileSync(fileName);
 		const newObject = JSON.parse(fileData);
 		// console.log(index, fileName, newObject);
 
 		allObjects.push({
-			id: fileName.substring(0, fileName.indexOf("/")),
-			schema: newObject
+			id: fileName.substring(0, fileName.indexOf('/')),
+			schema: newObject,
 		});
 	}); // files.map()
 
-	fs.writeFile('all.json', JSON.stringify(allObjects), function(err) {
+	fs.writeFile('all.json', JSON.stringify(allObjects), (err) => {
 		if (err) {
-				console.error('fs.writeFile error: ', err);
-				return false;
+			console.error('fs.writeFile error: ', err);
+			return false;
 		}
 	}); // fs.writeFile()
 
 	console.log('All "schema.json" files sucessfuly combined into "all.json" file');
- 	return true;
+	return true;
 }); // glob('**/schema.json')
 
-
 /**
- * Build index.html and sitemap.xml files with links to all "/abc-xyz/" folders 
+ * Build index.html and sitemap.xml files with links to all "/abc-xyz/" folders
  */
-glob('**/index.html', {}, function (err, files) {
+glob('**/index.html', {}, (err, files) => {
 	const htmlItems = [];
 	const xmlItems = [];
 
@@ -62,11 +61,11 @@ glob('**/index.html', {}, function (err, files) {
 
 	files.map((fileName, index) => {
 		console.log('Linking "%s" file...', fileName);
-		const link = fileName.substring(0, fileName.indexOf("/"));
-		if (link !== '') { // Skipping root folder
-			const text = capitalizeString( link.replace(/-/g, ' ') );
+		const link = fileName.substring(0, fileName.indexOf('/'));
+		if (link !== '') {// Skipping root folder
+			const text = capitalizeString(link.replace(/-/g, ' '));
 			htmlItems.push(`<li><a href="${link}/">${text}</a></li>`);
-			xmlItems.push(`<url><loc>https://software.karpolan.com/data/${link}/</loc><priority>0.4</priority></url>`);
+			xmlItems.push(`<url><loc>https://websites.karpolan.com/data/${link}/</loc><priority>0.4</priority></url>`);
 		}
 	}); // files.map()
 
@@ -83,10 +82,10 @@ ${htmlItems.join('\n')}
 	</ul>
 </body>
 </html>`;
-	fs.writeFile('index.html', htmlContent, function(err) {
+	fs.writeFile('index.html', htmlContent, (err) => {
 		if (err) {
-				console.error('fs.writeFile error: ', err);
-				return false;
+			console.error('fs.writeFile error: ', err);
+			return false;
 		}
 	});
 	console.log('HTML links to all sub-folders added to "index.html" file');
@@ -94,17 +93,16 @@ ${htmlItems.join('\n')}
 	// Write "sitemap.xml"
 	const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://software.karpolan.com/data/</loc><priority>0.6</priority></url>
+<url><loc>https://websites.karpolan.com/data/</loc><priority>0.6</priority></url>
 ${xmlItems.join('\n')}
-</urlset>`
-	fs.writeFile('sitemap.xml', xmlContent, function(err) {
+</urlset>`;
+	fs.writeFile('sitemap.xml', xmlContent, (err) => {
 		if (err) {
-				console.error('fs.writeFile error: ', err);
-				return false;
+			console.error('fs.writeFile error: ', err);
+			return false;
 		}
 	});
 	console.log('URL of all sub-folders added to "sitemap.xml" file');
 
 	return true;
 }); // glob('**/index.html')
-

@@ -11,9 +11,11 @@
 				<ProductDetails
 					v-if="loaded && !error"
 					:id="id"
+					:link="data.url"
 					:name="data.name"
-					:icon="icon"
-					:text="data.description"
+					:description="data.description"
+					:text="data.text"
+					:thumb="thumb"
 					:images="data.image"
 					:offers="data.offers"
 				/>
@@ -52,11 +54,16 @@ export default {
 	},
 
 	computed: {
-		icon() {
-			let icon = '';
-			if (this.data.image) icon = this.data.image;
-			if (Array.isArray(icon)) icon = icon[0]; // Use first image as icon
-			return icon;
+		thumb() {
+			let result = '';
+			if (this.data.thumbnailUrl) {
+				result = this.data.thumbnailUrl;
+			} else {
+				// There is no "thumbnailUrl" property, use data from "image"
+				if (this.data.image) result = this.data.image;
+				if (Array.isArray(result)) result = result[0]; // Use first image if array
+			}
+			return result;
 		},
 
 		jsonData() {

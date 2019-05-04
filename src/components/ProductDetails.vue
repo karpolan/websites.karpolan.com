@@ -1,29 +1,36 @@
 <template>
 	<div class="product-details">
 		<b-row>
-			<b-col class="name"
-				><h1>{{ name }}</h1></b-col
-			>
+			<b-col class="name">
+				<h1>{{ name }}</h1>
+			</b-col>
 		</b-row>
 
-		<b-row>
-			<b-col class="text">
-				<b-img class="product-icon" :src="icon" :alt="name" />
-				{{ text }}
+		<b-row v-if="description">
+			<b-col class="description">
+				{{ description }}
 			</b-col>
 		</b-row>
 
 		<b-row>
 			<b-col class="images">
-				<b-carousel :indicators="false" :interval="3000">
-					<b-carousel-slide v-for="(item, index) in images" :key="'image' + index">
-						<b-img class="product-image" slot="img" :src="item" :alt="name + ' image #' + index" />
-					</b-carousel-slide>
-				</b-carousel>
+				<a slot="img" :href="link" target="_blank" rel="noopener noreferrer">
+					<b-carousel :indicators="false" :interval="3000">
+						<b-carousel-slide v-for="(item, index) in images" :key="'image' + index">
+							<b-img slot="img" class="product-image" :src="item" :alt="name + ' image #' + index" />
+						</b-carousel-slide>
+					</b-carousel>
+				</a>
 			</b-col>
 		</b-row>
 
-		<b-row>
+		<b-row v-if="text">
+			<b-col class="text">
+				{{ text }}
+			</b-col>
+		</b-row>
+
+		<b-row v-if="offers">
 			<b-col class="buttons">
 				<b-button-toolbar>
 					<a
@@ -47,17 +54,17 @@ import '@/assets/product.css'; // Styling for product list, cards, and details
 
 export default {
 	name: 'ProductDetails',
-
-	data: () => ({}),
-
 	props: {
 		id: String,
+		link: { type: String, default: null },
 		name: String,
-		icon: String,
-		text: String,
+		description: { type: String, default: null },
+		text: { type: String, default: null },
 		images: Array,
-		offers: Array,
+		offers: { type: Array, default: null },
 	},
+
+	data: () => ({}),
 
 	mounted() {
 		// console.log('mounted(), props: ', this.$props);

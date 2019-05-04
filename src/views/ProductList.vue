@@ -11,9 +11,9 @@
 						v-for="item in items"
 						:key="item.id"
 						:link="'/' + item.id"
+						:thumb="item.schema.thumbnailUrl"
 						:name="item.schema.name"
 						:text="item.schema.description"
-						:icon="item.schema.image[0]"
 					/>
 				</b-card-group>
 			</article>
