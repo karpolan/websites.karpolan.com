@@ -13,6 +13,7 @@
 					:id="id"
 					:link="data.url"
 					:name="data.name"
+					:dates="dates"
 					:description="data.description"
 					:text="data.text"
 					:thumb="thumb"
@@ -64,6 +65,24 @@ export default {
 				if (Array.isArray(result)) result = result[0]; // Use first image if array
 			}
 			return result;
+		},
+
+		dates() {
+			if (!this.data.dateCreated) return null;
+
+			console.log('result:', this.data.dateCreated);
+			console.log('result:', this.data.expires);
+
+			let result = this.data.dateCreated;
+
+			if (this.data.expires && this.data.expires.length > 0) {
+				result += ' &ndash; ' + this.data.expires;
+			} else {
+				result += ' &ndash; current time';
+			}	
+			console.log('result:', result);
+
+			return result;	
 		},
 
 		jsonData() {

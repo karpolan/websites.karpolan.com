@@ -3,6 +3,7 @@
 		<b-row>
 			<b-col class="name">
 				<h1>{{ name }}</h1>
+				<h6 v-if="dates" v-html="dates" class="font-italic d-none d-sm-block"></h6>
 			</b-col>
 		</b-row>
 
@@ -58,6 +59,7 @@ export default {
 		id: String,
 		link: { type: String, default: null },
 		name: String,
+		dates: { type: String, default: null },
 		description: { type: String, default: null },
 		text: { type: String, default: null },
 		images: Array,
