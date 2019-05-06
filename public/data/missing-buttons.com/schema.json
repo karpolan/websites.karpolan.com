@@ -1,0 +1,72 @@
+{
+	"@context": "http://schema.org",
+	"@type": "WebSite",	
+
+	"identifier": "missing-buttons",
+	"url": "https://missing-buttons.com",
+	"keywords": "website, software",
+
+	"name": "Missing Buttons",
+	"alternateName": "missing-buttons.com",
+	"description": "The official website of the Missing Buttons software product",
+	"text": "Powered by WordPress CMS and custom PHP scripts. Based on free HTML5 theme. WordPress is used for web-site structure and news feed. All content is cached as static files.",
+	"headline": "",
+	"alternativeHeadline": "",
+
+	"thumbnailUrl": "https://websites.karpolan.com/data/missing-buttons.com/thumb.jpg",
+	"image": [
+		"https://websites.karpolan.com/data/missing-buttons.com/1024x768.jpg",
+		"https://websites.karpolan.com/data/missing-buttons.com/480x800.jpg",
+		"https://websites.karpolan.com/data/missing-buttons.com/icon-256x256.png",
+		"https://websites.karpolan.com/data/missing-buttons.com/screenshot-400x600.png",
+		"https://websites.karpolan.com/data/missing-buttons.com/screenshot.png"
+	],
+
+	"about": {
+		"@type": "Product",	
+		"name": "Missing Buttons",
+		"url": "https://missing-buttons.com",
+		"category": "Software"
+	},
+			
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "5.0",
+		"ratingCount": "65535"
+	},
+ 	
+	"publisher": {
+		"@type": "Organization",
+		"url": "https://karpolan.com",
+		"email": "websites@karpolan.com",
+		"name": "KARPOLAN"
+	},
+
+	"offers": [
+		{
+			"@type": "Offer",
+			"name" : "Visit",
+			"url": "https://missing-buttons.com",
+			"availability": "OnlineOnly"
+		},
+		{
+			"@type": "Offer",
+			"name" : "Download",
+			"url": "https://missing-buttons.com/download/",
+			"availability": "OnlineOnly"
+		},
+		{
+			"@type": "Offer",
+			"name" : "Buy",
+			"url": "https://missing-buttons.com/buy/",
+			"seller": {
+				"@type": "Organization",
+				"url": "https://missing-buttons.com",
+				"name": "Missing Buttons"
+			},
+			"availability": "OnlineOnly",
+			"priceCurrency": "USD",
+			"price": "9.95"
+		}
+	]
+}
