@@ -27,6 +27,8 @@ export default new Router({
 			name: 'about',
 			component: About,
 		},
+		{ path: '/index.*', redirect: '/' },
+		{ path: '/404', component: NotFound },
 		{ path: '/:id', component: Product },
 		{ path: '*', component: NotFound },
 	],

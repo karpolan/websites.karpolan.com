@@ -89,6 +89,8 @@ export default {
 				this.data = {};
 				this.loaded = true;
 				this.error = true;
+				// Redirect to Error page
+				this.$router.push('/404');
 			}
 			// console.log('getDataCallBack() data: ', this.data);
 		},
