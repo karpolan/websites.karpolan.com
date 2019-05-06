@@ -51,7 +51,7 @@
 					</ul>
 
 					<div class="copyright pb-3 d-none d-sm-block">
-						Copyright &copy; 1994-{{ new Date().getFullYear() + ' ' }}
+						Copyright &copy; 1996-{{ new Date().getFullYear() + ' ' }}
 						<a target="_blank" rel="noopener noreferrer" href="https://karpolan.com/">KARPOLAN</a>
 					</div>
 				</div>
