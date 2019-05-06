@@ -14,9 +14,15 @@
 							>
 						</li>
 						<li><router-link to="/" :title="'Websites created by ' + name">Websites</router-link></li>
-						<!--	
-						<li><a target="_blank" rel="noopener noreferrer" href="https://services.karpolan.com" :title="'Services created by ' + name">Services</a></li>
-					-->
+						<li>
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://services.karpolan.com"
+								:title="'Services created by ' + name"
+								>Services</a
+							>
+						</li>
 					</ul>
 				</div>
 
@@ -31,9 +37,15 @@
 								>Books</a
 							>
 						</li>
-						<!--	
-						<li><a target="_blank" rel="noopener noreferrer" href="https://karpolan.blogspot.com" :title="'Articles by ' + name">Articles</a></li>
-					-->
+						<li>
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://karpolan.blogspot.com"
+								:title="'Articles by ' + name"
+								>Articles</a
+							>
+						</li>
 						<li>
 							<a target="_blank" rel="noopener noreferrer" href="https://blog.karpolan.com" :title="'Blog by ' + name"
 								>Blog</a
