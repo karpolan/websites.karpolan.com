@@ -2,7 +2,7 @@ module.exports = {
 	pwa: {
 		name: 'Web application for websites.karpolan.com',
 		short_name: 'websites.karpolan.com',
-		start_url: '.',
+		start_url: 'https://websites.karpolan.com',
 		display: 'standalone',
 		manifestPath: 'site.webmanifest',
 		themeColor: '#ffffff',
