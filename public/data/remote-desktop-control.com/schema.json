@@ -8,7 +8,7 @@
 
 	"name": "Remote Desktop Control",
 	"alternateName": "remote-desktop-control.com",
-	"description": "The official website of the commercial software product Remote Desktop Control. The product is discontinued for now.",
+	"description": "Website of the commercial software product Remote Desktop Control. The product is discontinued for now.",
 	"text": "Web-site is built using own database-less CMS on PHP language. Content is dynamic, there are only few static pages. Design elements have been purchased at TemplateMonster.com stock.",
 	"headline": "",
 	"alternativeHeadline": "",
@@ -19,7 +19,7 @@
 
 	"thumbnailUrl": "https://websites.karpolan.com/data/remote-desktop-control.com/thumb.jpg",
 	"image": [
-		"https://websites.karpolan.com/data/remote-desktop-control.com/800x800.jpg",
+		"https://websites.karpolan.com/data/remote-desktop-control.com/1024x768.jpg",
 		"https://websites.karpolan.com/data/remote-desktop-control.com/screenshot-admin.png",
 		"https://websites.karpolan.com/data/remote-desktop-control.com/screenshot-view.png",
 		"https://websites.karpolan.com/data/remote-desktop-control.com/screenshot.png"
@@ -28,7 +28,7 @@
 	"about": {
 		"@type": "Product",	
 		"name": "Remote Desktop Control",
-		"url": "https://remote-desktop-control.com",
+		"url": "http://remote-desktop-control.com",
 		"category": "Software"
 	},
 			

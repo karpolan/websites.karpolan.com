@@ -17,8 +17,8 @@
 			<b-col class="images">
 				<a slot="img" :href="link" target="_blank" rel="noopener noreferrer">
 					<b-carousel :indicators="false" :interval="3000">
-						<b-carousel-slide v-for="(item, index) in images" :key="'image' + index">
-							<b-img slot="img" class="product-image" :src="item" :alt="name + ' image #' + index" />
+						<b-carousel-slide v-for="(item, index) in images" :key="'image' + (index + 1)">
+							<b-img slot="img" class="product-image" :src="item" :alt="name + ' - Image #' + (index + 1)" />
 						</b-carousel-slide>
 					</b-carousel>
 				</a>

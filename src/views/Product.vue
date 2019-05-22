@@ -70,19 +70,13 @@ export default {
 		dates() {
 			if (!this.data.dateCreated) return null;
 
-			console.log('result:', this.data.dateCreated);
-			console.log('result:', this.data.expires);
-
 			let result = this.data.dateCreated;
-
 			if (this.data.expires && this.data.expires.length > 0) {
 				result += ' &ndash; ' + this.data.expires;
 			} else {
 				result += ' &ndash; current time';
-			}	
-			console.log('result:', result);
-
-			return result;	
+			}
+			return result;
 		},
 
 		jsonData() {
