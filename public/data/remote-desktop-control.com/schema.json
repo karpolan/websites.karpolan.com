@@ -3,7 +3,7 @@
 	"@type": "WebSite",	
 
 	"identifier": "remote-desktop-control",
-	"url": "http://remote-desktop-control.com",
+	"url": "https://websites.karpolan.com/remote-desktop-control.com/",
 	"keywords": "website, software",
 
 	"name": "Remote Desktop Control",
@@ -13,8 +13,8 @@
 	"headline": "",
 	"alternativeHeadline": "",
 
-	"dateCreated": "2005-02-23",
-	"expires": "2012-01-07",
+	"dateCreated": "2005",
+	"expires": "2012",
 
 
 	"thumbnailUrl": "https://websites.karpolan.com/data/remote-desktop-control.com/thumb.jpg",
@@ -49,19 +49,19 @@
 		{
 			"@type": "Offer",
 			"name" : "Visit",
-			"url": "http://remote-desktop-control.com",
+			"url": "https://websites.karpolan.com/remote-desktop-control.com/",
 			"availability": "OnlineOnly"
 		},
 		{
 			"@type": "Offer",
 			"name" : "Download",
-			"url": "http://remote-desktop-control.com/download/",
+			"url": "https://websites.karpolan.com/remote-desktop-control.com/",
 			"availability": "OnlineOnly"
 		},
 		{
 			"@type": "Offer",
 			"name" : "Buy",
-			"url": "http://remote-desktop-control.com/buy/",
+			"url": "https://websites.karpolan.com/remote-desktop-control.com/",
 			"seller": {
 				"@type": "Organization",
 				"url": "https://remote-desktop-control.com",

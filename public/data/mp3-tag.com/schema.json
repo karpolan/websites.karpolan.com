@@ -1,0 +1,75 @@
+{
+	"@context": "http://schema.org",
+	"@type": "WebSite",	
+
+	"identifier": "mp3-tag",
+	"url": "https://websites.karpolan.com/mp3-tag.com/",
+	"keywords": "website, software",
+
+	"name": "MP3 Tag",
+	"alternateName": "mp3-tag.com",
+	"description": "Website for commercial MP3 Tag Editor software product. The product is discontinued for now.",
+	"text": "Site is built using custom ASP scripts without database. Design elements have been purchased at TemplateMonster.com stock and reworked.",
+	"headline": "",
+	"alternativeHeadline": "",
+
+	"dateCreated": "2006",
+	"expires": "2014",
+
+
+	"thumbnailUrl": "https://websites.karpolan.com/data/mp3-tag.com/thumb.jpg",
+	"image": [
+		"https://websites.karpolan.com/data/mp3-tag.com/1024x768.jpg",
+		"https://websites.karpolan.com/data/mp3-tag.com/icon-256x256.png",
+		"https://websites.karpolan.com/data/mp3-tag.com/boxshot.jpg",
+		"https://websites.karpolan.com/data/mp3-tag.com/screenshot.gif"
+	],
+
+	"about": {
+		"@type": "Product",	
+		"name": "MP3 Tag",
+		"url": "http://mp3-tag.com",
+		"category": "Software"
+	},
+			
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "5.0",
+		"ratingCount": "65535"
+	},
+ 	
+	"publisher": {
+		"@type": "Organization",
+		"url": "https://aquatra.com",
+		"email": "software@aquatra.com",
+		"name": "AQUATRA"
+	},
+
+	"offers": [
+		{
+			"@type": "Offer",
+			"name" : "Visit",
+			"url": "https://websites.karpolan.com/mp3-tag.com/",
+			"availability": "OnlineOnly"
+		},
+		{
+			"@type": "Offer",
+			"name" : "Download",
+			"url": "https://websites.karpolan.com/mp3-tag.com/",
+			"availability": "OnlineOnly"
+		},
+		{
+			"@type": "Offer",
+			"name" : "Buy",
+			"url": "https://websites.karpolan.com/mp3-tag.com/",
+			"seller": {
+				"@type": "Organization",
+				"url": "https://mp3-tag.com",
+				"name": "MP3 Tag"
+			},
+			"availability": "OnlineOnly",
+			"priceCurrency": "USD",
+			"price": "29.95"
+		}
+	]
+}

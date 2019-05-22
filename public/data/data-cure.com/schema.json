@@ -2,32 +2,32 @@
 	"@context": "http://schema.org",
 	"@type": "WebSite",	
 
-	"identifier": "dvd-blaster",
-	"url": "https://websites.karpolan.com/dvd-blaster.com/",
+	"identifier": "data-cure",
+	"url": "https://websites.karpolan.com/data-cure.com/",
 	"keywords": "website, software",
 
-	"name": "DVD Blaster",
-	"alternateName": "dvd-blaster.com",
-	"description": "Website of the commercial software product DVD Blaster. The product is discontinued for now.",
+	"name": "Data Cure",
+	"alternateName": "data-cure.com",
+	"description": "Website of the commercial software product Data Cure. The product is discontinued for now.",
 	"text": "Site is built using own database-less CMS on PHP aka \"Pages\". Content is fully dynamic, there are only few static pages. Design elements are based on free template and reworked.",
 	"headline": "",
 	"alternativeHeadline": "",
 
-	"dateCreated": "2006",
-	"expires": "2012",
+	"dateCreated": "2009",
+	"expires": "2011",
 
 
-	"thumbnailUrl": "https://websites.karpolan.com/data/dvd-blaster.com/thumb.jpg",
+	"thumbnailUrl": "https://websites.karpolan.com/data/data-cure.com/thumb.jpg",
 	"image": [
-		"https://websites.karpolan.com/data/dvd-blaster.com/1024x768.jpg",
-		"https://websites.karpolan.com/data/dvd-blaster.com/icon-256x256.png",
-		"https://websites.karpolan.com/data/dvd-blaster.com/screenshot.png"
+		"https://websites.karpolan.com/data/data-cure.com/1024x768.jpg",
+		"https://websites.karpolan.com/data/data-cure.com/logo-400x400.jpg",
+		"https://websites.karpolan.com/data/data-cure.com/screenshot.jpg"
 	],
 
 	"about": {
 		"@type": "Product",	
-		"name": "DVD Blaster",
-		"url": "http://dvd-blaster.com",
+		"name": "Data Cure",
+		"url": "http://data-cure.com",
 		"category": "Software"
 	},
 			
@@ -48,27 +48,27 @@
 		{
 			"@type": "Offer",
 			"name" : "Visit",
-			"url": "https://websites.karpolan.com/dvd-blaster.com/",
+			"url": "https://websites.karpolan.com/data-cure.com/",
 			"availability": "OnlineOnly"
 		},
 		{
 			"@type": "Offer",
 			"name" : "Download",
-			"url": "https://websites.karpolan.com/dvd-blaster.com/",
+			"url": "https://websites.karpolan.com/data-cure.com/",
 			"availability": "OnlineOnly"
 		},
 		{
 			"@type": "Offer",
 			"name" : "Buy",
-			"url": "https://websites.karpolan.com/dvd-blaster.com/",
+			"url": "https://websites.karpolan.com/data-cure.com/",
 			"seller": {
 				"@type": "Organization",
-				"url": "http://dvd-blaster.com",
-				"name": "DVD Blaster"
+				"url": "http://data-cure.com",
+				"name": "Data Cure"
 			},
 			"availability": "OnlineOnly",
 			"priceCurrency": "USD",
-			"price": "19.95"
+			"price": "39.95"
 		}
 	]
 }
