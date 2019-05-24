@@ -1,23 +1,24 @@
 {
   "name": "websites.karpolan.com",
-  "version": "0.5.31",
+  "version": "0.5.33",
+  "private": true,
   "description": "Web application for websites.karpolan.com",
+  "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
+  "homepage": "https://websites.karpolan.com",
   "keywords": [
     "vue",
     "website",
     "product",
     "karpolan"
   ],
-  "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
-  "homepage": "https://websites.karpolan.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/karpolan/websites.karpolan.com"
   },
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "product": "cross-env NODE_ENV=production vue-cli-service build && workbox generateSW workbox-config.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -41,6 +42,7 @@
     "@vue/cli-service": "^3.7.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "babel-eslint": "^10.0.1",
+    "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-prettier": "^3.0.1",
