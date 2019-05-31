@@ -1,58 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-</head>
-
-<body>
-	<h1 id="name"></h1>
-	<div>
-		<p id="desc"></p>
-		<p id="text"></p>
-		<a id="link"></a>
-	</div>
-
-	<script type="text/javascript">
-		function loadJsonFile(fileName = './schema.json') {
-			return fetch(fileName, { credentials: 'same-origin' })
-				.then(function (response) {
-					if (!response.ok) {
-						throw new Error("HTTP error " + response.status);
-					}
-					return response.json();
-				})
-				.then(function (json) {
-					return json;
-				})
-				.catch(function (error) {
-					console.error('loadJsonFile(%s) failed, Error: %s', fileName, error.message);
-					return null;
-				});
-		}; // loadJsonFile()
-
-		loadJsonFile('./schema.json').then(function (json) {
-			console.log('JSON:', json);
-			if (json) {
-				// Add <script type="application/ld+json"> with json data
-				var script = document.createElement('script');
-				script.type = 'application/ld+json';
-				script.innerHTML = JSON.stringify(json);
-				document.getElementsByTagName('head')[0].appendChild(script);
-
-				// Populate DOM elements
-				document.title = json['name'];
-				document.getElementById('name').innerHTML = json['name'];
-				document.getElementById('desc').innerHTML = json['description'];
-				document.getElementById('text').innerHTML = json['text'];
-				var link = document.getElementById('link');
-				if (link) {
-					link.href = json['url'];
-					link.innerHTML = 'More about ' + json['name'];
-				}
-			}
-		});	
-	</script>
-</body>
-
-</html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Audio Tags Editor</title>
+		<meta
+			name="description"
+			content="Audio Tags Editor website is created by Anton Karpenko (aka KARPOLAN)"
+		/>
+	</head>
+	<body>
+		<h1 id="name">Audio Tags Editor</h1>
+		<div>
+			<p id="desc">Website for commercial Audio Tags Editor software product by ABF software, Inc.</p>
+			<a id="link" href="http://audio-tags-editor.com">Visit Audio Tags Editor website</a>
+			<p id="text">Site is built using static HTML with server-side (SSI) includes. Design elements have been purchased at TemplateMonster.com stock.</p>
+		</div>
+		<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebSite","identifier":"audio-tags-editor","url":"http://audio-tags-editor.com","keywords":"website, software","name":"Audio Tags Editor","alternateName":"audio-tags-editor.com","description":"Website for commercial Audio Tags Editor software product by ABF software, Inc.","text":"Site is built using static HTML with server-side (SSI) includes. Design elements have been purchased at TemplateMonster.com stock.","headline":"","alternativeHeadline":"","dateCreated":"2003","expires":"2006","thumbnailUrl":"https://websites.karpolan.com/data/audio-tags-editor.com/thumb.jpg","image":["https://websites.karpolan.com/data/audio-tags-editor.com/1024x768.jpg","https://websites.karpolan.com/data/audio-tags-editor.com/screenshot.gif","https://websites.karpolan.com/data/audio-tags-editor.com/screenshot-mass-freedb.gif"],"about":{"@type":"Product","name":"Audio Tags Editor","url":"http://audio-tags-editor.com","category":"Software"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"65535"},"publisher":{"@type":"Organization","url":"http://abf-soft.com","email":"support@abf-soft.com","name":"ABF software, Inc."},"offers":[{"@type":"Offer","name":"Visit","url":"http://www.audio-tags-editor.com","availability":"OnlineOnly"},{"@type":"Offer","name":"Download","url":"http://www.audio-tags-editor.com/download.shtml","availability":"OnlineOnly"},{"@type":"Offer","name":"Buy","url":"http://www.audio-tags-editor.com/buy.shtml","seller":{"@type":"Organization","url":"http://audio-tags-editor.com","name":"Audio Tags Editor"},"availability":"OnlineOnly","priceCurrency":"USD","price":"29.95"}]}
+		</script>
+	</body>
+<html>

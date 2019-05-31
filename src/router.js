@@ -9,28 +9,28 @@ import NotFound from '@/views/NotFound';
 Vue.use(Router);
 
 export default new Router({
-	mode: 'history',
-	base: process.env.BASE_URL,
-	routes: [
-		{
-			path: '/',
-			name: 'home',
-			component: ProductList,
-		},
-		{ path: '/index.html', component: ProductList },
-		{
-			path: '/contact',
-			name: 'contact',
-			component: Contact,
-		},
-		{
-			path: '/about',
-			name: 'about',
-			component: About,
-		},
-		{ path: '/index.*', redirect: '/' },
-		{ path: '/404', component: NotFound },
-		{ path: '/:id', component: Product },
-		{ path: '*', component: NotFound },
-	],
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: ProductList,
+    },
+    { path: '/index.html', component: ProductList },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact,
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About,
+    },
+    { path: '/index.*', redirect: '/' },
+    { path: '/404', component: NotFound },
+    { path: '/:id', component: Product },
+    { path: '*', component: NotFound },
+  ],
 });

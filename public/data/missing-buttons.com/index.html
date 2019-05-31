@@ -1,58 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-</head>
-
-<body>
-	<h1 id="name"></h1>
-	<div>
-		<p id="desc"></p>
-		<p id="text"></p>
-		<a id="link"></a>
-	</div>
-
-	<script type="text/javascript">
-		function loadJsonFile(fileName = './schema.json') {
-			return fetch(fileName, { credentials: 'same-origin' })
-				.then(function (response) {
-					if (!response.ok) {
-						throw new Error("HTTP error " + response.status);
-					}
-					return response.json();
-				})
-				.then(function (json) {
-					return json;
-				})
-				.catch(function (error) {
-					console.error('loadJsonFile(%s) failed, Error: %s', fileName, error.message);
-					return null;
-				});
-		}; // loadJsonFile()
-
-		loadJsonFile('./schema.json').then(function (json) {
-			console.log('JSON:', json);
-			if (json) {
-				// Add <script type="application/ld+json"> with json data
-				var script = document.createElement('script');
-				script.type = 'application/ld+json';
-				script.innerHTML = JSON.stringify(json);
-				document.getElementsByTagName('head')[0].appendChild(script);
-
-				// Populate DOM elements
-				document.title = json['name'];
-				document.getElementById('name').innerHTML = json['name'];
-				document.getElementById('desc').innerHTML = json['description'];
-				document.getElementById('text').innerHTML = json['text'];
-				var link = document.getElementById('link');
-				if (link) {
-					link.href = json['url'];
-					link.innerHTML = 'More about ' + json['name'];
-				}
-			}
-		});	
-	</script>
-</body>
-
-</html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Missing Buttons</title>
+		<meta
+			name="description"
+			content="Missing Buttons website is created by Anton Karpenko (aka KARPOLAN)"
+		/>
+	</head>
+	<body>
+		<h1 id="name">Missing Buttons</h1>
+		<div>
+			<p id="desc">The official website of the Missing Buttons software product</p>
+			<a id="link" href="https://missing-buttons.com">Visit Missing Buttons website</a>
+			<p id="text">Powered by WordPress CMS and custom PHP scripts. Based on free HTML5 theme. WordPress is used for web-site structure and news feed. All content is cached as static files.</p>
+		</div>
+		<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebSite","identifier":"missing-buttons","url":"https://missing-buttons.com","keywords":"website, software","name":"Missing Buttons","alternateName":"missing-buttons.com","description":"The official website of the Missing Buttons software product","text":"Powered by WordPress CMS and custom PHP scripts. Based on free HTML5 theme. WordPress is used for web-site structure and news feed. All content is cached as static files.","headline":"","alternativeHeadline":"","dateCreated":"2013-05-06","expires":"","thumbnailUrl":"https://websites.karpolan.com/data/missing-buttons.com/thumb.jpg","image":["https://websites.karpolan.com/data/missing-buttons.com/1024x768.jpg","https://websites.karpolan.com/data/missing-buttons.com/480x800.jpg","https://websites.karpolan.com/data/missing-buttons.com/icon-256x256.png","https://websites.karpolan.com/data/missing-buttons.com/screenshot-400x600.png","https://websites.karpolan.com/data/missing-buttons.com/screenshot.png"],"about":{"@type":"Product","name":"Missing Buttons","url":"https://missing-buttons.com","category":"Software"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"65535"},"publisher":{"@type":"Organization","url":"https://karpolan.com","email":"websites@karpolan.com","name":"KARPOLAN"},"offers":[{"@type":"Offer","name":"Visit","url":"https://missing-buttons.com","availability":"OnlineOnly"},{"@type":"Offer","name":"Download","url":"https://missing-buttons.com/download/","availability":"OnlineOnly"},{"@type":"Offer","name":"Buy","url":"https://missing-buttons.com/buy/","seller":{"@type":"Organization","url":"https://missing-buttons.com","name":"Missing Buttons"},"availability":"OnlineOnly","priceCurrency":"USD","price":"9.95"}]}
+		</script>
+	</body>
+<html>

@@ -1,6 +1,6 @@
 {
   "name": "websites.karpolan.com",
-  "version": "0.5.33",
+  "version": "0.5.35",
   "private": true,
   "description": "Web application for websites.karpolan.com",
   "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
@@ -18,7 +18,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "product": "cross-env NODE_ENV=production vue-cli-service build && workbox generateSW workbox-config.js",
+    "product": "node ./public/data/combine.js && cross-env NODE_ENV=production vue-cli-service build && workbox generateSW workbox-config.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

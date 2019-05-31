@@ -1,58 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-</head>
-
-<body>
-	<h1 id="name"></h1>
-	<div>
-		<p id="desc"></p>
-		<p id="text"></p>
-		<a id="link"></a>
-	</div>
-
-	<script type="text/javascript">
-		function loadJsonFile(fileName = './schema.json') {
-			return fetch(fileName, { credentials: 'same-origin' })
-				.then(function (response) {
-					if (!response.ok) {
-						throw new Error("HTTP error " + response.status);
-					}
-					return response.json();
-				})
-				.then(function (json) {
-					return json;
-				})
-				.catch(function (error) {
-					console.error('loadJsonFile(%s) failed, Error: %s', fileName, error.message);
-					return null;
-				});
-		}; // loadJsonFile()
-
-		loadJsonFile('./schema.json').then(function (json) {
-			console.log('JSON:', json);
-			if (json) {
-				// Add <script type="application/ld+json"> with json data
-				var script = document.createElement('script');
-				script.type = 'application/ld+json';
-				script.innerHTML = JSON.stringify(json);
-				document.getElementsByTagName('head')[0].appendChild(script);
-
-				// Populate DOM elements
-				document.title = json['name'];
-				document.getElementById('name').innerHTML = json['name'];
-				document.getElementById('desc').innerHTML = json['description'];
-				document.getElementById('text').innerHTML = json['text'];
-				var link = document.getElementById('link');
-				if (link) {
-					link.href = json['url'];
-					link.innerHTML = 'More about ' + json['name'];
-				}
-			}
-		});	
-	</script>
-</body>
-
-</html>
+	<head>
+		<meta charset="utf-8" />
+		<title>CD Blaster</title>
+		<meta
+			name="description"
+			content="CD Blaster website is created by Anton Karpenko (aka KARPOLAN)"
+		/>
+	</head>
+	<body>
+		<h1 id="name">CD Blaster</h1>
+		<div>
+			<p id="desc">Website for commercial CD Blaster software product by ABF software, Inc.</p>
+			<a id="link" href="http://cd-blaster.com">Visit CD Blaster website</a>
+			<p id="text">Site is built using static HTML with server-side (SSI) includes. Design elements were created by ABF team.</p>
+		</div>
+		<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebSite","identifier":"cd-blaster","url":"http://cd-blaster.com","keywords":"website, software","name":"CD Blaster","alternateName":"cd-blaster.com","description":"Website for commercial CD Blaster software product by ABF software, Inc.","text":"Site is built using static HTML with server-side (SSI) includes. Design elements were created by ABF team.","headline":"","alternativeHeadline":"","dateCreated":"2002","expires":"2006","thumbnailUrl":"https://websites.karpolan.com/data/cd-blaster.com/thumb.jpg","image":["https://websites.karpolan.com/data/cd-blaster.com/1024x768.jpg","https://websites.karpolan.com/data/cd-blaster.com/screenshot.gif","https://websites.karpolan.com/data/cd-blaster.com/screenshot2.gif","https://websites.karpolan.com/data/cd-blaster.com/screenshot3.gif"],"about":{"@type":"Product","name":"CD Blaster","url":"http://cd-blaster.com","category":"Software"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"65535"},"publisher":{"@type":"Organization","url":"http://abf-soft.com","email":"support@abf-soft.com","name":"ABF software, Inc."},"offers":[{"@type":"Offer","name":"Visit","url":"http://www.cd-blaster.com","availability":"OnlineOnly"},{"@type":"Offer","name":"Download","url":"http://www.cd-blaster.com/download.shtml","availability":"OnlineOnly"},{"@type":"Offer","name":"Buy","url":"http://www.cd-blaster.com/buy.shtml","seller":{"@type":"Organization","url":"http://cd-blaster.com","name":"CD Blaster"},"availability":"OnlineOnly","priceCurrency":"USD","price":"24.95"}]}
+		</script>
+	</body>
+<html>

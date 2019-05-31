@@ -6,25 +6,25 @@ import { shuffle } from '../utils';
  * @param {String} property - Name of property in this.state object to load data.
  */
 export const getAllData = (callback, property = 'data') => {
-	fetch('/data/all.json')
-		.then((response) => response.json())
-		.then((data) => {
-			// Shuffle the list of products
-			shuffle(data);
-			// Call data setting callback as success
-			callback({
-				loaded: true,
-				[property]: data,
-			});
-		})
-		.catch((error) => {
-			console.error(error);
-			// Call data setting callback as fail
-			callback({
-				error: true,
-				[property]: {},
-			});
-		});
+  fetch('/data/all.json')
+    .then((response) => response.json())
+    .then((data) => {
+      // Shuffle the list of products
+      shuffle(data);
+      // Call data setting callback as success
+      callback({
+        loaded: true,
+        [property]: data,
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+      // Call data setting callback as fail
+      callback({
+        error: true,
+        [property]: {},
+      });
+    });
 }; // getAllData()
 
 /**
@@ -34,23 +34,23 @@ export const getAllData = (callback, property = 'data') => {
  * @param {String} property - Name of property in this.state object to load data.
  */
 export const getData = (id, callback, property = 'data') => {
-	fetch(`/data/${id}/schema.json`)
-		.then((response) => response.json())
-		.then((data) => {
-			// Call data setting callback as success
-			callback({
-				loaded: true,
-				id: id,
-				[property]: data,
-			});
-		})
-		.catch((error) => {
-			console.error(error);
-			// Call data setting callback as fail
-			callback({
-				error: true,
-				id: id,
-				[property]: {},
-			});
-		});
+  fetch(`/data/${id}/schema.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      // Call data setting callback as success
+      callback({
+        loaded: true,
+        id: id,
+        [property]: data,
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+      // Call data setting callback as fail
+      callback({
+        error: true,
+        id: id,
+        [property]: {},
+      });
+    });
 }; // getData()

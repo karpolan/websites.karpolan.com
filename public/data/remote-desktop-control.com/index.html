@@ -1,58 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-</head>
-
-<body>
-	<h1 id="name"></h1>
-	<div>
-		<p id="desc"></p>
-		<p id="text"></p>
-		<a id="link"></a>
-	</div>
-
-	<script type="text/javascript">
-		function loadJsonFile(fileName = './schema.json') {
-			return fetch(fileName, { credentials: 'same-origin' })
-				.then(function (response) {
-					if (!response.ok) {
-						throw new Error("HTTP error " + response.status);
-					}
-					return response.json();
-				})
-				.then(function (json) {
-					return json;
-				})
-				.catch(function (error) {
-					console.error('loadJsonFile(%s) failed, Error: %s', fileName, error.message);
-					return null;
-				});
-		}; // loadJsonFile()
-
-		loadJsonFile('./schema.json').then(function (json) {
-			console.log('JSON:', json);
-			if (json) {
-				// Add <script type="application/ld+json"> with json data
-				var script = document.createElement('script');
-				script.type = 'application/ld+json';
-				script.innerHTML = JSON.stringify(json);
-				document.getElementsByTagName('head')[0].appendChild(script);
-
-				// Populate DOM elements
-				document.title = json['name'];
-				document.getElementById('name').innerHTML = json['name'];
-				document.getElementById('desc').innerHTML = json['description'];
-				document.getElementById('text').innerHTML = json['text'];
-				var link = document.getElementById('link');
-				if (link) {
-					link.href = json['url'];
-					link.innerHTML = 'More about ' + json['name'];
-				}
-			}
-		});	
-	</script>
-</body>
-
-</html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Remote Desktop Control</title>
+		<meta
+			name="description"
+			content="Remote Desktop Control website is created by Anton Karpenko (aka KARPOLAN)"
+		/>
+	</head>
+	<body>
+		<h1 id="name">Remote Desktop Control</h1>
+		<div>
+			<p id="desc">Website of the commercial software product Remote Desktop Control. The product is discontinued for now.</p>
+			<a id="link" href="/remote-desktop-control.com">Visit Remote Desktop Control website</a>
+			<p id="text">Web-site is built using own database-less CMS on PHP language. Content is dynamic, there are only few static pages. Design elements have been purchased at TemplateMonster.com stock.</p>
+		</div>
+		<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebSite","identifier":"remote-desktop-control","url":"/remote-desktop-control.com","keywords":"website, software","name":"Remote Desktop Control","alternateName":"remote-desktop-control.com","description":"Website of the commercial software product Remote Desktop Control. The product is discontinued for now.","text":"Web-site is built using own database-less CMS on PHP language. Content is dynamic, there are only few static pages. Design elements have been purchased at TemplateMonster.com stock.","headline":"","alternativeHeadline":"","dateCreated":"2005","expires":"2012","thumbnailUrl":"https://websites.karpolan.com/data/remote-desktop-control.com/thumb.jpg","image":["https://websites.karpolan.com/data/remote-desktop-control.com/1024x768.jpg","https://websites.karpolan.com/data/remote-desktop-control.com/screenshot-admin.png","https://websites.karpolan.com/data/remote-desktop-control.com/screenshot-view.png","https://websites.karpolan.com/data/remote-desktop-control.com/screenshot.png"],"about":{"@type":"Product","name":"Remote Desktop Control","url":"http://remote-desktop-control.com","category":"Software"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"65535"},"publisher":{"@type":"Organization","url":"http://aquatra.com","email":"infoe@aquatra.com","name":"AQUATRA"},"offers":[{"@type":"Offer","name":"Visit","url":"/remote-desktop-control.com","availability":"OnlineOnly"},{"@type":"Offer","name":"Download","url":"/remote-desktop-control.com","availability":"OnlineOnly"},{"@type":"Offer","name":"Buy","url":"/remote-desktop-control.com","seller":{"@type":"Organization","url":"https://remote-desktop-control.com","name":"Remote Desktop Control"},"availability":"OnlineOnly","priceCurrency":"USD","price":"15"}]}
+		</script>
+	</body>
+<html>
