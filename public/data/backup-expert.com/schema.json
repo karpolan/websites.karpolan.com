@@ -1,0 +1,73 @@
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+
+  "identifier": "backup-expert",
+  "url": "/backup-expert.com",
+  "keywords": "website, software",
+
+  "name": "Backup Expert",
+  "alternateName": "backup-expert.com",
+  "description": "Website of the commercial software product Backup Expert. The product is discontinued for now.",
+  "text": "Site is built using own database-less CMS on PHP aka \"Pages\". Content is fully dynamic, there are only few static pages. Design consists of 3 images only, everything also is CSS.",
+  "headline": "",
+  "alternativeHeadline": "",
+
+  "dateCreated": "2003",
+  "expires": "2011",
+
+  "thumbnailUrl": "./data/backup-expert.com/thumb.jpg",
+  "image": [
+    "./data/backup-expert.com/1024x768.jpg",
+    "./data/backup-expert.com/screenshot3d.jpg",
+    "./data/backup-expert.com/screenshot.jpg"
+  ],
+
+  "about": {
+    "@type": "Product",
+    "name": "Backup Expert",
+    "url": "http://backup-expert.com",
+    "category": "Software"
+  },
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "ratingCount": "65535"
+  },
+
+  "publisher": {
+    "@type": "Organization",
+    "url": "http://aquatra.com",
+    "email": "info@aquatra.com",
+    "name": "AQUATRA"
+  },
+
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Visit",
+      "url": "/backup-expert.com",
+      "availability": "OnlineOnly"
+    },
+    {
+      "@type": "Offer",
+      "name": "Download",
+      "url": "/backup-expert.com",
+      "availability": "OnlineOnly"
+    },
+    {
+      "@type": "Offer",
+      "name": "Buy",
+      "url": "/backup-expert.com",
+      "seller": {
+        "@type": "Organization",
+        "url": "http://backup-expert.com",
+        "name": "Backup Expert"
+      },
+      "availability": "OnlineOnly",
+      "priceCurrency": "USD",
+      "price": "19.95"
+    }
+  ]
+}
