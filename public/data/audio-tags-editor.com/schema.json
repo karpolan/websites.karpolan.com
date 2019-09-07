@@ -1,74 +1,73 @@
 {
-	"@context": "http://schema.org",
-	"@type": "WebSite",	
+  "@context": "https://schema.org",
+  "@type": "WebSite",
 
-	"identifier": "audio-tags-editor",
-	"url": "http://audio-tags-editor.com",
-	"keywords": "website, software",
+  "identifier": "audio-tags-editor",
+  "url": "http://audio-tags-editor.com",
+  "keywords": "website, software",
 
-	"name": "Audio Tags Editor",
-	"alternateName": "audio-tags-editor.com",
-	"description": "Website for commercial Audio Tags Editor software product by ABF software, Inc.",
-	"text": "Site is built using static HTML with server-side (SSI) includes. Design elements have been purchased at TemplateMonster.com stock.",
-	"headline": "",
-	"alternativeHeadline": "",
+  "name": "Audio Tags Editor",
+  "alternateName": "audio-tags-editor.com",
+  "description": "Website for commercial Audio Tags Editor software product by ABF software, Inc.",
+  "text": "Site is built using static HTML with server-side (SSI) includes. Design elements have been purchased at TemplateMonster.com stock.",
+  "headline": "",
+  "alternativeHeadline": "",
 
-	"dateCreated": "2003",
-	"expires": "2006",
+  "dateCreated": "2003",
+  "expires": "2006",
 
+  "thumbnailUrl": "https://websites.karpolan.com/data/audio-tags-editor.com/thumb.jpg",
+  "image": [
+    "https://websites.karpolan.com/data/audio-tags-editor.com/1024x768.jpg",
+    "https://websites.karpolan.com/data/audio-tags-editor.com/screenshot.gif",
+    "https://websites.karpolan.com/data/audio-tags-editor.com/screenshot-mass-freedb.gif"
+  ],
 
-	"thumbnailUrl": "https://websites.karpolan.com/data/audio-tags-editor.com/thumb.jpg",
-	"image": [
-		"https://websites.karpolan.com/data/audio-tags-editor.com/1024x768.jpg",
-		"https://websites.karpolan.com/data/audio-tags-editor.com/screenshot.gif",
-		"https://websites.karpolan.com/data/audio-tags-editor.com/screenshot-mass-freedb.gif"
-	],
+  "about": {
+    "@type": "Product",
+    "name": "Audio Tags Editor",
+    "url": "http://audio-tags-editor.com",
+    "category": "Software"
+  },
 
-	"about": {
-		"@type": "Product",	
-		"name": "Audio Tags Editor",
-		"url": "http://audio-tags-editor.com",
-		"category": "Software"
-	},
-			
-	"aggregateRating": {
-		"@type": "AggregateRating",
-		"ratingValue": "5.0",
-		"ratingCount": "65535"
-	},
- 	
-	"publisher": {
-		"@type": "Organization",
-		"url": "http://abf-soft.com",
-		"email": "support@abf-soft.com",
-		"name": "ABF software, Inc."
-	},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "ratingCount": "65535"
+  },
 
-	"offers": [
-		{
-			"@type": "Offer",
-			"name" : "Visit",
-			"url": "http://www.audio-tags-editor.com",
-			"availability": "OnlineOnly"
-		},
-		{
-			"@type": "Offer",
-			"name" : "Download",
-			"url": "http://www.audio-tags-editor.com/download.shtml",
-			"availability": "OnlineOnly"
-		},
-		{
-			"@type": "Offer",
-			"name" : "Buy",
-			"url": "http://www.audio-tags-editor.com/buy.shtml",
-			"seller": {
-				"@type": "Organization",
-				"url": "http://audio-tags-editor.com",
-				"name": "Audio Tags Editor"
-			},
-			"availability": "OnlineOnly",
-			"priceCurrency": "USD",
-			"price": "29.95"
-		}
-	]
+  "publisher": {
+    "@type": "Organization",
+    "url": "http://abf-soft.com",
+    "email": "support@abf-soft.com",
+    "name": "ABF software, Inc."
+  },
+
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Visit",
+      "url": "http://www.audio-tags-editor.com",
+      "availability": "OnlineOnly"
+    },
+    {
+      "@type": "Offer",
+      "name": "Download",
+      "url": "http://www.audio-tags-editor.com/download.shtml",
+      "availability": "OnlineOnly"
+    },
+    {
+      "@type": "Offer",
+      "name": "Buy",
+      "url": "http://www.audio-tags-editor.com/buy.shtml",
+      "seller": {
+        "@type": "Organization",
+        "url": "http://audio-tags-editor.com",
+        "name": "Audio Tags Editor"
+      },
+      "availability": "OnlineOnly",
+      "priceCurrency": "USD",
+      "price": "29.95"
+    }
+  ]
 }

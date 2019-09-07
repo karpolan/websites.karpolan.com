@@ -25,6 +25,7 @@ module.exports = {
   rules: {
     'no-console': 'warn',
     'no-debugger': 'warn',
+    'no-unused-vars': 'warn',
     indent: ['error', 2],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],

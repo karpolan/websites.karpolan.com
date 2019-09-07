@@ -18,7 +18,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "product": "node ./public/data/combine.js && cross-env NODE_ENV=production vue-cli-service build && workbox generateSW workbox-config.js",
+    "update-data": "cd ./public/data/ && node combine.js && cd ../../",
+    "product": "npm run update-data && cross-env NODE_ENV=production vue-cli-service build && workbox generateSW workbox-config.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

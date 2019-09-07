@@ -1,74 +1,74 @@
 {
-	"@context": "http://schema.org",
-	"@type": "WebSite",	
+  "@context": "https://schema.org",
+  "@type": "WebSite",
 
-	"identifier": "caps-lock-indicator",
-	"url": "https://caps-lock-indicator.com",
-	"keywords": "website, software",
+  "identifier": "caps-lock-indicator",
+  "url": "https://caps-lock-indicator.com",
+  "keywords": "website, software",
 
-	"name": "Caps Lock Indicator",
-	"alternateName": "caps-lock-indicator.com",
-	"description": "The official website of the Caps Lock Indicator software product",
-	"text": "Powered by WordPress CMS and custom PHP scripts. Based on the free EvoLve theme. WordPress is used for web-site structure and news feed. All content is cached as static files.",
-	"headline": "",
-	"alternativeHeadline": "",
+  "name": "Caps Lock Indicator",
+  "alternateName": "caps-lock-indicator.com",
+  "description": "The official website of the Caps Lock Indicator software product",
+  "text": "Powered by WordPress CMS and custom PHP scripts. Based on the free EvoLve theme. WordPress is used for web-site structure and news feed. All content is cached as static files.",
+  "headline": "",
+  "alternativeHeadline": "",
 
-	"dateCreated": "2012-07-19",
-	"expires": "",
+  "dateCreated": "2012-07-19",
+  "expires": "",
 
-	"thumbnailUrl": "https://websites.karpolan.com/data/caps-lock-indicator.com/thumb.jpg",
-	"image": [
-		"https://websites.karpolan.com/data/caps-lock-indicator.com/1024x768.jpg",
-		"https://websites.karpolan.com/data/caps-lock-indicator.com/480x800.jpg",
-		"https://websites.karpolan.com/data/caps-lock-indicator.com/icon-256x256.png",
-		"https://websites.karpolan.com/data/caps-lock-indicator.com/screenshot.png"
-	],
+  "thumbnailUrl": "https://websites.karpolan.com/data/caps-lock-indicator.com/thumb.jpg",
+  "image": [
+    "https://websites.karpolan.com/data/caps-lock-indicator.com/1024x768.jpg",
+    "https://websites.karpolan.com/data/caps-lock-indicator.com/480x800.jpg",
+    "https://websites.karpolan.com/data/caps-lock-indicator.com/icon-256x256.png",
+    "https://websites.karpolan.com/data/caps-lock-indicator.com/screenshot.png"
+  ],
 
-	"about": {
-		"@type": "Product",	
-		"name": "Caps Lock Indicator",
-		"url": "https://caps-lock-indicator.com",
-		"category": "Software"
-	},
-			
-	"aggregateRating": {
-		"@type": "AggregateRating",
-		"ratingValue": "5.0",
-		"ratingCount": "65535"
-	},
- 	
-	"publisher": {
-		"@type": "Organization",
-		"url": "https://karpolan.com",
-		"email": "websites@karpolan.com",
-		"name": "KARPOLAN"
-	},
+  "about": {
+    "@type": "Product",
+    "name": "Caps Lock Indicator",
+    "url": "https://caps-lock-indicator.com",
+    "category": "Software"
+  },
 
-	"offers": [
-		{
-			"@type": "Offer",
-			"name" : "Visit",
-			"url": "https://caps-lock-indicator.com",
-			"availability": "OnlineOnly"
-		},
-		{
-			"@type": "Offer",
-			"name" : "Download",
-			"url": "https://caps-lock-indicator.com/download/",
-			"availability": "OnlineOnly"
-		},
-		{
-			"@type": "Offer",
-			"name" : "Buy",
-			"url": "https://caps-lock-indicator.com/buy/",
-			"seller": {
-				"@type": "Organization",
-				"url": "https://caps-lock-indicator.com",
-				"name": "Caps Lock Indicator"
-			},
-			"availability": "OnlineOnly",
-			"priceCurrency": "USD",
-			"price": "9.95"
-		}
-	]
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "ratingCount": "65535"
+  },
+
+  "publisher": {
+    "@type": "Organization",
+    "url": "https://karpolan.com",
+    "email": "websites@karpolan.com",
+    "name": "KARPOLAN"
+  },
+
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Visit",
+      "url": "https://caps-lock-indicator.com",
+      "availability": "OnlineOnly"
+    },
+    {
+      "@type": "Offer",
+      "name": "Download",
+      "url": "https://caps-lock-indicator.com/download/",
+      "availability": "OnlineOnly"
+    },
+    {
+      "@type": "Offer",
+      "name": "Buy",
+      "url": "https://caps-lock-indicator.com/buy/",
+      "seller": {
+        "@type": "Organization",
+        "url": "https://caps-lock-indicator.com",
+        "name": "Caps Lock Indicator"
+      },
+      "availability": "OnlineOnly",
+      "priceCurrency": "USD",
+      "price": "9.95"
+    }
+  ]
 }

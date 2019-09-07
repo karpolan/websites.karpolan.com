@@ -10,5 +10,5 @@ export const github = 'https://github.com/karpolan';
 export const slideshare = 'https://www.slideshare.net/karpolan/';
 export const behance = 'https://www.behance.net/karpolan';
 export const pinterest = 'https://www.pinterest.com/karpolan/';
-export const tumblr = 'http://karpolan.tumblr.com/';
+export const tumblr = 'https://karpolan.tumblr.com/';
 export const flickr = 'https://www.flickr.com/people/karpolan';

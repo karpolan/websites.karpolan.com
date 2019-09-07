@@ -1,5 +1,5 @@
 {
-  "@context": "http://schema.org",
+  "@context": "https://schema.org",
   "@type": "WebSite",
 
   "identifier": "backup-expert",
@@ -26,7 +26,7 @@
   "about": {
     "@type": "Product",
     "name": "Backup Expert",
-    "url": "http://backup-expert.com",
+    "url": "https://backup-expert.com",
     "category": "Software"
   },
 
@@ -38,7 +38,7 @@
 
   "publisher": {
     "@type": "Organization",
-    "url": "http://aquatra.com",
+    "url": "https://aquatra.com",
     "email": "info@aquatra.com",
     "name": "AQUATRA"
   },
@@ -62,7 +62,7 @@
       "url": "/backup-expert.com",
       "seller": {
         "@type": "Organization",
-        "url": "http://backup-expert.com",
+        "url": "https://backup-expert.com",
         "name": "Backup Expert"
       },
       "availability": "OnlineOnly",

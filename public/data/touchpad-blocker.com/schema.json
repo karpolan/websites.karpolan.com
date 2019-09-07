@@ -1,61 +1,61 @@
 {
-	"@context": "http://schema.org",
-	"@type": "WebSite",	
+  "@context": "https://schema.org",
+  "@type": "WebSite",
 
-	"identifier": "touchpad-blocker",
-	"url": "https://touchpad-blocker.com",
-	"keywords": "website, software, free",
+  "identifier": "touchpad-blocker",
+  "url": "https://touchpad-blocker.com",
+  "keywords": "website, software, free",
 
-	"name": "Touchpad Blocker",
-	"alternateName": "touchpad-blocker.com",
-	"description": "Website for free Touchpad Blocker software utility",
-	"text": "Powered by WordPress CMS and custom PHP scripts. Based on free WP theme. WordPress is used for web-site structure and news feed. Some pages have PHP script inside WP container. All content is cached as static files.",
-	"headline": "",
-	"alternativeHeadline": "",
+  "name": "Touchpad Blocker",
+  "alternateName": "touchpad-blocker.com",
+  "description": "Website for free Touchpad Blocker software utility",
+  "text": "Powered by WordPress CMS and custom PHP scripts. Based on free WP theme. WordPress is used for web-site structure and news feed. Some pages have PHP script inside WP container. All content is cached as static files.",
+  "headline": "",
+  "alternativeHeadline": "",
 
-	"dateCreated": "2010-09-09",
-	"expires": "",
+  "dateCreated": "2010-09-09",
+  "expires": "",
 
-	"thumbnailUrl": "https://websites.karpolan.com/data/touchpad-blocker.com/thumb.jpg",
-	"image": [
-		"https://websites.karpolan.com/data/touchpad-blocker.com/1024x768.jpg",
-		"https://websites.karpolan.com/data/touchpad-blocker.com/480x800.jpg",
-		"https://websites.karpolan.com/data/touchpad-blocker.com/icon-256x256.png",
-		"https://websites.karpolan.com/data/touchpad-blocker.com/screenshot.png"
-	],
+  "thumbnailUrl": "https://websites.karpolan.com/data/touchpad-blocker.com/thumb.jpg",
+  "image": [
+    "https://websites.karpolan.com/data/touchpad-blocker.com/1024x768.jpg",
+    "https://websites.karpolan.com/data/touchpad-blocker.com/480x800.jpg",
+    "https://websites.karpolan.com/data/touchpad-blocker.com/icon-256x256.png",
+    "https://websites.karpolan.com/data/touchpad-blocker.com/screenshot.png"
+  ],
 
-	"about": {
-		"@type": "Product",	
-		"name": "Touchpad Blocker",
-		"url": "https://touchpad-blocker.com",
-		"category": "Software"
-	},
-			
-	"aggregateRating": {
-		"@type": "AggregateRating",
-		"ratingValue": "5.0",
-		"ratingCount": "65535"
-	},
- 	
-	"publisher": {
-		"@type": "Organization",
-		"url": "https://karpolan.com",
-		"email": "websites@karpolan.com",
-		"name": "KARPOLAN"
-	},
+  "about": {
+    "@type": "Product",
+    "name": "Touchpad Blocker",
+    "url": "https://touchpad-blocker.com",
+    "category": "Software"
+  },
 
-	"offers": [
-		{
-			"@type": "Offer",
-			"name" : "Visit",
-			"url": "https://touchpad-blocker.com",
-			"availability": "OnlineOnly"
-		},
-		{
-			"@type": "Offer",
-			"name" : "Download",
-			"url": "https://touchpad-blocker.com/download/",
-			"availability": "OnlineOnly"
-		}
-	]
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "ratingCount": "65535"
+  },
+
+  "publisher": {
+    "@type": "Organization",
+    "url": "https://karpolan.com",
+    "email": "websites@karpolan.com",
+    "name": "KARPOLAN"
+  },
+
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Visit",
+      "url": "https://touchpad-blocker.com",
+      "availability": "OnlineOnly"
+    },
+    {
+      "@type": "Offer",
+      "name": "Download",
+      "url": "https://touchpad-blocker.com/download/",
+      "availability": "OnlineOnly"
+    }
+  ]
 }

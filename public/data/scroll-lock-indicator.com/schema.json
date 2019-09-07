@@ -1,74 +1,74 @@
 {
-	"@context": "http://schema.org",
-	"@type": "WebSite",	
+  "@context": "https://schema.org",
+  "@type": "WebSite",
 
-	"identifier": "scroll-lock-indicator",
-	"url": "https://scroll-lock-indicator.com",
-	"keywords": "website, software",
+  "identifier": "scroll-lock-indicator",
+  "url": "https://scroll-lock-indicator.com",
+  "keywords": "website, software",
 
-	"name": "Scroll Lock Indicator",
-	"alternateName": "scroll-lock-indicator.com",
-	"description": "The official website of Scroll Lock Indicator software product",
-	"text": "Powered by WordPress CMS and custom PHP scripts. Based on redesigned Priimo theme. WordPress is used for web-site structure and news feed. Some pages have PHP scripts inside WP container. All web-site content is cached.",
-	"headline": "",
-	"alternativeHeadline": "",
+  "name": "Scroll Lock Indicator",
+  "alternateName": "scroll-lock-indicator.com",
+  "description": "The official website of Scroll Lock Indicator software product",
+  "text": "Powered by WordPress CMS and custom PHP scripts. Based on redesigned Priimo theme. WordPress is used for web-site structure and news feed. Some pages have PHP scripts inside WP container. All web-site content is cached.",
+  "headline": "",
+  "alternativeHeadline": "",
 
-	"dateCreated": "2012-11-02",
-	"expires": "",
+  "dateCreated": "2012-11-02",
+  "expires": "",
 
-	"thumbnailUrl": "https://websites.karpolan.com/data/scroll-lock-indicator.com/thumb.jpg",
-	"image": [
-		"https://websites.karpolan.com/data/scroll-lock-indicator.com/1024x768.jpg",
-		"https://websites.karpolan.com/data/scroll-lock-indicator.com/480x800.jpg",
-		"https://websites.karpolan.com/data/scroll-lock-indicator.com/icon-256x256.png",
-		"https://websites.karpolan.com/data/scroll-lock-indicator.com/screenshot.png"
-	],
+  "thumbnailUrl": "https://websites.karpolan.com/data/scroll-lock-indicator.com/thumb.jpg",
+  "image": [
+    "https://websites.karpolan.com/data/scroll-lock-indicator.com/1024x768.jpg",
+    "https://websites.karpolan.com/data/scroll-lock-indicator.com/480x800.jpg",
+    "https://websites.karpolan.com/data/scroll-lock-indicator.com/icon-256x256.png",
+    "https://websites.karpolan.com/data/scroll-lock-indicator.com/screenshot.png"
+  ],
 
-	"about": {
-		"@type": "Product",	
-		"name": "Scroll Lock Indicator",
-		"url": "https://scroll-lock-indicator.com",
-		"category": "Software"
-	},
-			
-	"aggregateRating": {
-		"@type": "AggregateRating",
-		"ratingValue": "5.0",
-		"ratingCount": "65535"
-	},
- 	
-	"publisher": {
-		"@type": "Organization",
-		"url": "https://karpolan.com",
-		"email": "websites@karpolan.com",
-		"name": "KARPOLAN"
-	},
+  "about": {
+    "@type": "Product",
+    "name": "Scroll Lock Indicator",
+    "url": "https://scroll-lock-indicator.com",
+    "category": "Software"
+  },
 
-	"offers": [
-		{
-			"@type": "Offer",
-			"name" : "Visit",
-			"url": "https://scroll-lock-indicator.com",
-			"availability": "OnlineOnly"
-		},
-		{
-			"@type": "Offer",
-			"name" : "Download",
-			"url": "https://scroll-lock-indicator.com/download/",
-			"availability": "OnlineOnly"
-		},
-		{
-			"@type": "Offer",
-			"name" : "Buy",
-			"url": "https://scroll-lock-indicator.com/buy/",
-			"seller": {
-				"@type": "Organization",
-				"url": "https://scroll-lock-indicator.com",
-				"name": "Scroll Lock Indicator"
-			},
-			"availability": "OnlineOnly",
-			"priceCurrency": "USD",
-			"price": "2.95"
-		}
-	]
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "ratingCount": "65535"
+  },
+
+  "publisher": {
+    "@type": "Organization",
+    "url": "https://karpolan.com",
+    "email": "websites@karpolan.com",
+    "name": "KARPOLAN"
+  },
+
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Visit",
+      "url": "https://scroll-lock-indicator.com",
+      "availability": "OnlineOnly"
+    },
+    {
+      "@type": "Offer",
+      "name": "Download",
+      "url": "https://scroll-lock-indicator.com/download/",
+      "availability": "OnlineOnly"
+    },
+    {
+      "@type": "Offer",
+      "name": "Buy",
+      "url": "https://scroll-lock-indicator.com/buy/",
+      "seller": {
+        "@type": "Organization",
+        "url": "https://scroll-lock-indicator.com",
+        "name": "Scroll Lock Indicator"
+      },
+      "availability": "OnlineOnly",
+      "priceCurrency": "USD",
+      "price": "2.95"
+    }
+  ]
 }

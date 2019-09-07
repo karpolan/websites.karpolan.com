@@ -1,5 +1,5 @@
 {
-  "@context": "http://schema.org",
+  "@context": "https://schema.org",
   "@type": "WebSite",
 
   "identifier": "mp3-tag",
@@ -39,7 +39,7 @@
 
   "publisher": {
     "@type": "Organization",
-    "url": "http://aquatra.com",
+    "url": "https://aquatra.com",
     "email": "info@aquatra.com",
     "name": "AQUATRA"
   },

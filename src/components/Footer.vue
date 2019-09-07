@@ -82,7 +82,7 @@ export default {
     linkedin,
     facebook,
     twitter,
-    github,
+    github: 'https://github.com/karpolan/websites.karpolan.com',
   }),
 
   components: {

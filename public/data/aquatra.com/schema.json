@@ -1,5 +1,5 @@
 {
-  "@context": "http://schema.org",
+  "@context": "https://schema.org",
   "@type": "WebSite",
 
   "identifier": "aquatra",
@@ -22,7 +22,7 @@
   "about": {
     "@type": "Product",
     "name": "AQUATRA",
-    "url": "http://aquatra.com",
+    "url": "https://aquatra.com",
     "category": "Software"
   },
 
@@ -34,7 +34,7 @@
 
   "publisher": {
     "@type": "Organization",
-    "url": "http://aquatra.com",
+    "url": "https://aquatra.com",
     "email": "info@aquatra.com",
     "name": "AQUATRA"
   },
