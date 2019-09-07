@@ -72,7 +72,7 @@ import { faLinkedin, faFacebook, faTwitter, faGithub } from '@fortawesome/free-b
 library.add(faLinkedin, faFacebook, faTwitter, faGithub);
 
 // Application Data
-import { name, linkedin, facebook, twitter, github } from '@/data/consts';
+import { name, linkedin, facebook, twitter /*, github*/ } from '@/data/consts';
 
 export default {
   name: 'Footer',
