@@ -15,7 +15,8 @@
         target="_blank"
         rel="noopener noreferrer"
         :href="'mailto:i@karpolan.com?subject=' + emailSubject"
-      >i@karpolan.com</a>
+        >i@karpolan.com</a
+      >
     </p>
     <div>
       <font-awesome-icon :icon="['fas', 'home']" size="2x" class="mr-3 align-middle" />
