@@ -30,11 +30,7 @@
         ></b-form-textarea>
       </b-form-group>
 
-      <div
-        v-if="sent"
-        class="alert alert-success"
-        role="alert"
-      >Your message has been sent successfully.</div>
+      <div v-if="sent" class="alert alert-success" role="alert">Your message has been sent successfully.</div>
 
       <b-button type="reset" variant="outline-danger">Reset</b-button>
       <b-button class="float-right" type="submit" variant="outline-primary">Submit</b-button>
