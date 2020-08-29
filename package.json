@@ -19,7 +19,9 @@
     "serve": "vue-cli-service serve",
     "prebuild": "npm run update-data",
     "build": "vue-cli-service build",
+    "postbuild": "npm run make-pwa",
     "update-data": "cd ./public/data/ && node combine.js && cd ../../",
+    "make-pwa": "workbox generateSW workbox-config.js",
     "product": "npm run update-data && cross-env NODE_ENV=production vue-cli-service build && workbox generateSW workbox-config.js",
     "lint": "vue-cli-service lint"
   },
