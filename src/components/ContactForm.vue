@@ -100,7 +100,7 @@ export default {
           message: this.form.message,
         })
         .then(() => {
-          console.log('sendContactEmail() succesful');
+          console.log('sendContactEmail() successful');
           this.sent = true;
           this.resetForm();
           return true;
