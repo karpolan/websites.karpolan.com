@@ -65,7 +65,8 @@ export default {
   data: () => ({}),
 
   mounted() {
-    // console.log('mounted(), props: ', this.$props);
+    // eslint-disable-next-line
+    console.log('mounted(), props: ', this.$props);
   },
 
   computed: {
