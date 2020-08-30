@@ -16,11 +16,11 @@
   "dateCreated": "2003",
   "expires": "2011",
 
-  "thumbnailUrl": "./data/backup-expert.com/thumb.jpg",
+  "thumbnailUrl": "/data/backup-expert.com/thumb.jpg",
   "image": [
-    "./data/backup-expert.com/1024x768.jpg",
-    "./data/backup-expert.com/screenshot3d.jpg",
-    "./data/backup-expert.com/screenshot.jpg"
+    "/data/backup-expert.com/1024x768.jpg",
+    "/data/backup-expert.com/screenshot3d.jpg",
+    "/data/backup-expert.com/screenshot.jpg"
   ],
 
   "about": {

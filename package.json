@@ -1,7 +1,7 @@
 {
   "name": "websites.karpolan.com",
   "description": "Web application for websites.karpolan.com",
-  "version": "0.6.45",
+  "version": "0.6.47",
   "private": true,
   "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
   "homepage": "https://websites.karpolan.com",
