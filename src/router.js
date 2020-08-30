@@ -14,23 +14,26 @@ export default new Router({
   routes: [
     {
       path: '/',
+      alias: '/index.html',
       name: 'home',
       component: ProductList,
     },
-    { path: '/index.html', component: ProductList },
+    // { path: '/index.html', component: ProductList },
     {
-      path: '/contact',
+      path: '/contact/',
+      alias: '/contact/index.html',
       name: 'contact',
       component: Contact,
     },
     {
-      path: '/about',
+      path: '/about/',
+      alias: '/about/index.html',
       name: 'about',
       component: About,
     },
     { path: '/index.*', redirect: '/' },
     { path: '/404', component: NotFound },
-    { path: '/:id', component: Product },
+    { path: '/:id/', alias: '/:id/index.html', component: Product },
     { path: '*', component: NotFound },
   ],
 });

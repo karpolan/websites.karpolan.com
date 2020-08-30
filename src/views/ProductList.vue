@@ -10,7 +10,7 @@
           <ProductCard
             v-for="item in items"
             :key="item.id"
-            :link="'/' + item.id"
+            :link="'/' + item.id + '/index.html'"
             :thumb="item.schema.thumbnailUrl"
             :name="item.schema.name"
             :text="item.schema.description"
