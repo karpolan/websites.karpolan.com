@@ -66,7 +66,7 @@ export default {
 
   mounted() {
     // eslint-disable-next-line
-    console.log('mounted(), props: ', this.$props);
+    // console.log('mounted(), props: ', this.$props);
   },
 
   computed: {
