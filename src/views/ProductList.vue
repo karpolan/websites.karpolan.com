@@ -28,6 +28,16 @@ import ProductCard from '@/components/ProductCard';
 
 export default {
   name: 'ProductList',
+  components: {
+    ProductCard,
+    Spinner,
+  },
+
+  metaInfo: {
+    title: 'Websites by KARPOLAN',
+    link: [{ rel: 'canonical', href: 'https://websites.karpolan.com' }],
+  },
+
   data: () => ({
     items: [],
     error: false,
@@ -57,11 +67,6 @@ export default {
       // console.log('getDataCallBack() data: ', this.data);
       // this.error = true;
     },
-  },
-
-  components: {
-    ProductCard,
-    Spinner,
   },
 };
 </script>

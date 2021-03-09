@@ -10,6 +10,10 @@ Vue.use(BootstrapVue);
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
+// Vue Meta (<head> manipulation)
+import Meta from 'vue-meta';
+Vue.use(Meta);
+
 // Application
 import App from './App.vue';
 import router from './router';
