@@ -41,9 +41,7 @@
       <div class="col-12 mt-3">
         <h4>Tech specification</h4>
         <section class="tech">
-          <p>
-            This web-site is built using the following technologies and frameworks:
-          </p>
+          <p>This web-site is built using the following technologies and frameworks:</p>
           <ul>
             <li>
               <b
@@ -98,6 +96,10 @@ export default {
   components: {
     SocialIcons,
     Contacts,
+  },
+  metaInfo: {
+    title: 'About - Websites by KARPOLAN',
+    link: [{ rel: 'canonical', href: 'https://websites.karpolan.com/about/index.html' }],
   },
 };
 </script>
