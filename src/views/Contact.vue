@@ -43,5 +43,9 @@ export default {
     ContactForm,
     SocialIcons,
   },
+  metaInfo: {
+    title: 'Contact - Websites by KARPOLAN',
+    link: [{ rel: 'canonical', href: 'https://websites.karpolan.com/contact/index.html' }],
+  },
 };
 </script>

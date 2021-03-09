@@ -36,6 +36,7 @@
     "core-js": "latest",
     "register-service-worker": "latest",
     "vue": "latest",
+    "vue-meta": "^2.4.0",
     "vue-router": "latest",
     "vuex": "latest"
   },

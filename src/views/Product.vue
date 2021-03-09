@@ -36,6 +36,20 @@ import ProductDetails from '@/components/ProductDetails';
 
 export default {
   name: 'ProductList',
+  components: {
+    ProductDetails,
+    Spinner,
+  },
+
+  metaInfo() {
+    const title = `${this?.data?.name} - Websites by KARPOLAN`;
+    const link = [{ rel: 'canonical', href: `https://websites.karpolan.com/${this?.id}/index.html` }];
+    return {
+      title,
+      link,
+    };
+  },
+
   data: () => ({
     id: '',
     data: {},
@@ -107,11 +121,6 @@ export default {
       }
       // console.log('getDataCallBack() data: ', this.data);
     },
-  },
-
-  components: {
-    ProductDetails,
-    Spinner,
   },
 };
 </script>

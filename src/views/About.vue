@@ -97,5 +97,9 @@ export default {
     SocialIcons,
     Contacts,
   },
+  metaInfo: {
+    title: 'About - Websites by KARPOLAN',
+    link: [{ rel: 'canonical', href: 'https://websites.karpolan.com/about/index.html' }],
+  },
 };
 </script>

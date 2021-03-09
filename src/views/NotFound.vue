@@ -35,6 +35,9 @@ library.add(faHome, faEnvelope);
 
 export default {
   name: 'NotFound',
+  metaInfo: {
+    title: 'Page not Found - Websites by KARPOLAN',
+  },
 };
 </script>
 
