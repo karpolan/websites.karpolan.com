@@ -4,9 +4,7 @@
       <div class="row contact-info">
         <div class="col-12">
           <h4>Contact me</h4>
-          <p>
-            Feel free to ask any questions about web development, information technologies or online business.
-          </p>
+          <p>Feel free to ask any questions about web development, information technologies or online business.</p>
         </div>
       </div>
     </main>

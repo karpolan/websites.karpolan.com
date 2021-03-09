@@ -41,9 +41,7 @@
       <div class="col-12 mt-3">
         <h4>Tech specification</h4>
         <section class="tech">
-          <p>
-            This web-site is built using the following technologies and frameworks:
-          </p>
+          <p>This web-site is built using the following technologies and frameworks:</p>
           <ul>
             <li>
               <b
