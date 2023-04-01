@@ -38,7 +38,7 @@ import SocialIcons from '@/components/SocialIcons.vue';
 import ContactForm from '@/components/ContactForm.vue';
 
 export default {
-  name: 'contact',
+  name: 'ContactPage',
   components: {
     ContactForm,
     SocialIcons,

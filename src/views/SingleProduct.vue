@@ -1,12 +1,12 @@
 <template>
-  <div class="prooduct container text-left py-3">
+  <div class="product container text-left py-3">
     <main>
       <article>
         <b-alert :show="error" variant="danger" role="alert"
           >Data loading for "{{ id }}" object failed. Sorry for that :(</b-alert
         >
 
-        <Spinner :show="!loaded" />
+        <LoadingSpinner :show="!loaded" />
 
         <ProductDetails
           v-if="loaded && !error"
@@ -31,14 +31,14 @@
 
 <script>
 import { Data } from '@/data';
-import Spinner from '@/components/Spinner';
+import LoadingSpinner from '@/components/LoadingSpinner';
 import ProductDetails from '@/components/ProductDetails';
 
 export default {
-  name: 'ProductList',
+  name: 'SingleProduct',
   components: {
     ProductDetails,
-    Spinner,
+    LoadingSpinner,
   },
 
   metaInfo() {

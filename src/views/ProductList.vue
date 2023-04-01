@@ -4,7 +4,7 @@
       <article>
         <b-alert :show="error" variant="danger" role="alert">Data loading failed. Sorry for that :(</b-alert>
 
-        <Spinner :show="!loaded" />
+        <LoadingSpinner :show="!loaded" />
 
         <b-card-group v-if="loaded && !error" columns>
           <ProductCard
@@ -23,14 +23,14 @@
 
 <script>
 import { Data } from '@/data';
-import Spinner from '@/components/Spinner';
+import LoadingSpinner from '@/components/LoadingSpinner';
 import ProductCard from '@/components/ProductCard';
 
 export default {
   name: 'ProductList',
   components: {
     ProductCard,
-    Spinner,
+    LoadingSpinner,
   },
 
   metaInfo: {

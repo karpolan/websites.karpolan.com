@@ -75,7 +75,7 @@ library.add(faLinkedin, faFacebook, faTwitter, faGithub);
 import { name, linkedin, facebook, twitter /*, github*/ } from '@/data/consts';
 
 export default {
-  name: 'Footer',
+  name: 'SiteFooter',
 
   data: () => ({
     name,

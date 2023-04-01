@@ -89,7 +89,7 @@ export default {
      */
     sendContactEmail() {
       if (this.email === '' || this.message === '') {
-        console.warn('sendContactEmail() canceled. Nothing to send.');
+        console.warn('sendContactEmail() canceled. Nothing to send.'); // eslint-disable-line no-console
         return false;
       }
       window.emailjs.init('user_f84LhJ9n84Exjm3QTSbeF');
@@ -100,12 +100,14 @@ export default {
           message: this.form.message,
         })
         .then(() => {
-          console.log('sendContactEmail() successful');
+          console.log('sendContactEmail() successful'); // eslint-disable-line no-console
           this.sent = true;
           this.resetForm();
           return true;
         })
-        .catch((err) => console.error('sendContactEmail() failed. Error: ', err));
+        .catch(
+          (err) => console.error('sendContactEmail() failed. Error: ', err) // eslint-disable-line no-console
+        );
     },
 
     /**
