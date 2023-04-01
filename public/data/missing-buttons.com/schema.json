@@ -3,7 +3,7 @@
   "@type": "WebSite",
 
   "identifier": "missing-buttons",
-  "url": "https://missing-buttons.com",
+  "url": "/missing-buttons.com",
   "keywords": "website, software",
 
   "name": "Missing Buttons",
@@ -13,8 +13,8 @@
   "headline": "",
   "alternativeHeadline": "",
 
-  "dateCreated": "2013-05-06",
-  "expires": "",
+  "dateCreated": "2013",
+  "expires": "2023",
 
   "thumbnailUrl": "https://websites.karpolan.com/data/missing-buttons.com/thumb.jpg",
   "image": [
@@ -28,7 +28,7 @@
   "about": {
     "@type": "Product",
     "name": "Missing Buttons",
-    "url": "https://missing-buttons.com",
+    "url": "/missing-buttons.com",
     "category": "Software"
   },
 
@@ -49,19 +49,19 @@
     {
       "@type": "Offer",
       "name": "Visit",
-      "url": "https://missing-buttons.com",
+      "url": "/missing-buttons.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Download",
-      "url": "https://missing-buttons.com/download/",
+      "url": "/missing-buttons.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Buy",
-      "url": "https://missing-buttons.com/buy/",
+      "url": "/missing-buttons.com",
       "seller": {
         "@type": "Organization",
         "url": "https://missing-buttons.com",

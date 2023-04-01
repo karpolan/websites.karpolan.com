@@ -3,7 +3,7 @@
   "@type": "WebSite",
 
   "identifier": "audio-tags-editor",
-  "url": "http://audio-tags-editor.com",
+  "url": "/audio-tags-editor.com",
   "keywords": "website, software",
 
   "name": "Audio Tags Editor",
@@ -47,19 +47,19 @@
     {
       "@type": "Offer",
       "name": "Visit",
-      "url": "http://www.audio-tags-editor.com",
+      "url": "/audio-tags-editor.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Download",
-      "url": "http://www.audio-tags-editor.com/download.shtml",
+      "url": "/audio-tags-editor.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Buy",
-      "url": "http://www.audio-tags-editor.com/buy.shtml",
+      "url": "/audio-tags-editor.com",
       "seller": {
         "@type": "Organization",
         "url": "http://audio-tags-editor.com",

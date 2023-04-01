@@ -3,7 +3,7 @@
   "@type": "WebSite",
 
   "identifier": "cd-blaster",
-  "url": "http://cd-blaster.com",
+  "url": "/cd-blaster.com",
   "keywords": "website, software",
 
   "name": "CD Blaster",
@@ -48,19 +48,19 @@
     {
       "@type": "Offer",
       "name": "Visit",
-      "url": "http://www.cd-blaster.com",
+      "url": "/cd-blaster.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Download",
-      "url": "http://www.cd-blaster.com/download.shtml",
+      "url": "/cd-blaster.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Buy",
-      "url": "http://www.cd-blaster.com/buy.shtml",
+      "url": "/cd-blaster.com",
       "seller": {
         "@type": "Organization",
         "url": "http://cd-blaster.com",

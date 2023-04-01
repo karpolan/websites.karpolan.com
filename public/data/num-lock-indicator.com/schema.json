@@ -3,7 +3,7 @@
   "@type": "WebSite",
 
   "identifier": "num-lock-indicator",
-  "url": "https://num-lock-indicator.com",
+  "url": "/num-lock-indicator.com",
   "keywords": "website, software",
 
   "name": "Num Lock Indicator",
@@ -13,8 +13,8 @@
   "headline": "",
   "alternativeHeadline": "",
 
-  "dateCreated": "2012-09-14",
-  "expires": "",
+  "dateCreated": "2012",
+  "expires": "2023",
 
   "thumbnailUrl": "https://websites.karpolan.com/data/num-lock-indicator.com/thumb.jpg",
   "image": [
@@ -48,19 +48,19 @@
     {
       "@type": "Offer",
       "name": "Visit",
-      "url": "https://num-lock-indicator.com",
+      "url": "/num-lock-indicator.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Download",
-      "url": "https://num-lock-indicator.com/download/",
+      "url": "/num-lock-indicator.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Buy",
-      "url": "https://num-lock-indicator.com/buy/",
+      "url": "/num-lock-indicator.com",
       "seller": {
         "@type": "Organization",
         "url": "https://num-lock-indicator.com",
