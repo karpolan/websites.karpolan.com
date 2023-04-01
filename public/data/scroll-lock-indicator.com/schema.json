@@ -3,7 +3,7 @@
   "@type": "WebSite",
 
   "identifier": "scroll-lock-indicator",
-  "url": "https://scroll-lock-indicator.com",
+  "url": "/scroll-lock-indicator.com",
   "keywords": "website, software",
 
   "name": "Scroll Lock Indicator",
@@ -13,8 +13,8 @@
   "headline": "",
   "alternativeHeadline": "",
 
-  "dateCreated": "2012-11-02",
-  "expires": "",
+  "dateCreated": "2012",
+  "expires": "2023",
 
   "thumbnailUrl": "https://websites.karpolan.com/data/scroll-lock-indicator.com/thumb.jpg",
   "image": [
@@ -48,19 +48,19 @@
     {
       "@type": "Offer",
       "name": "Visit",
-      "url": "https://scroll-lock-indicator.com",
+      "url": "/scroll-lock-indicator.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Download",
-      "url": "https://scroll-lock-indicator.com/download/",
+      "url": "/scroll-lock-indicator.com",
       "availability": "OnlineOnly"
     },
     {
       "@type": "Offer",
       "name": "Buy",
-      "url": "https://scroll-lock-indicator.com/buy/",
+      "url": "/scroll-lock-indicator.com",
       "seller": {
         "@type": "Organization",
         "url": "https://scroll-lock-indicator.com",

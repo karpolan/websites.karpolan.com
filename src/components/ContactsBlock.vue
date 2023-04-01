@@ -20,7 +20,7 @@
     </p>
     <div>
       <font-awesome-icon :icon="['fas', 'home']" size="2x" class="mr-3 align-middle" />
-      <address class="d-inline">Nivy, Bratislava, SLOVAKIA</address>
+      <address class="d-inline">SkyPark, Bratislava, SLOVAKIA</address>
       <p></p>
     </div>
   </section>
