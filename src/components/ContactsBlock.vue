@@ -34,7 +34,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(faCalendar, faPhone, faHome, faEnvelope);
 
 export default {
-  name: 'Contacts',
+  name: 'ContactsBlock',
   props: {
     emailSubject: String,
   },

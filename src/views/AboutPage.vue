@@ -24,7 +24,7 @@
             </p>
           </section>
 
-          <Contacts emailSubject="From WEBSITES.KARPOLAN.COM About" />
+          <ContactsBlock emailSubject="From WEBSITES.KARPOLAN.COM About" />
 
           <section class="social">
             <p>
@@ -89,13 +89,13 @@
 
 <script>
 import SocialIcons from '@/components/SocialIcons.vue';
-import Contacts from '@/components/Contacts.vue';
+import ContactsBlock from '@/components/ContactsBlock.vue';
 
 export default {
-  name: 'about',
+  name: 'AboutPage',
   components: {
     SocialIcons,
-    Contacts,
+    ContactsBlock,
   },
   metaInfo: {
     title: 'About - Websites by KARPOLAN',

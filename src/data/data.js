@@ -18,7 +18,7 @@ export const getAllData = (callback, property = 'data') => {
       });
     })
     .catch((error) => {
-      console.error(error);
+      console.error(error); // eslint-disable-line no-console
       // Call data setting callback as fail
       callback({
         error: true,
@@ -45,7 +45,7 @@ export const getData = (id, callback, property = 'data') => {
       });
     })
     .catch((error) => {
-      console.error(error);
+      console.error(error); // eslint-disable-line no-console
       // Call data setting callback as fail
       callback({
         error: true,
