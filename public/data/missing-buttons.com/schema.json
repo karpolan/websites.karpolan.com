@@ -48,28 +48,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
+      "name": "Website is Offline",
       "url": "/missing-buttons.com",
       "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Download",
-      "url": "/missing-buttons.com",
-      "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Buy",
-      "url": "/missing-buttons.com",
-      "seller": {
-        "@type": "Organization",
-        "url": "https://missing-buttons.com",
-        "name": "Missing Buttons"
-      },
-      "availability": "OnlineOnly",
-      "priceCurrency": "USD",
-      "price": "9.95"
     }
   ]
 }

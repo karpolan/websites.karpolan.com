@@ -47,16 +47,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
-      "url": "/ochepyatka.com",
-      "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Download",
+      "name": "Website is Offline",
       "url": "/ochepyatka.com",
       "availability": "OnlineOnly"
     }
-
   ]
 }

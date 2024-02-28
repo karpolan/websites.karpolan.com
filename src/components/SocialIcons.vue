@@ -15,13 +15,10 @@
 </template>
 
 <script>
-import SocialIcon from './SocialIcon';
-import '@/assets/social-colors.css'; // Colors for social icons
+import SocialIcon from './SocialIcon.vue';
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
-// import * as b from "@fortawesome/free-brands-svg-icons";
-// library.add(b.faLinkedin, b.faFacebook, b.faTwitter, b.faYoutube, b.faInstagram, b.faSlideshare, b.faGithub, b.faBehance, b.faPinterest, b.faTumblr, b.faFlickr)
 import {
   faLinkedin,
   faFacebook,

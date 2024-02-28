@@ -6,7 +6,7 @@
     </p>
     <p>
       <font-awesome-icon :icon="['fas', 'phone']" size="2x" class="me-3 align-middle" />
-      <a class="align-middle" rel="noopener noreferrer" href="tel:+421919321977">+421 919 321 977</a>
+      <a class="align-middle" rel="noopener noreferrer" :href="'tel:' + phone">{{ phone }}</a>
     </p>
     <p>
       <font-awesome-icon :icon="['far', 'envelope']" size="2x" class="me-3 align-middle" />
@@ -14,14 +14,13 @@
         class="align-middle"
         target="_blank"
         rel="noopener noreferrer"
-        :href="'mailto:i@karpolan.com?subject=' + emailSubject"
-        >i@karpolan.com</a
+        :href="'mailto:' + email + '?subject=' + emailSubject"
+        >{{ email }}</a
       >
     </p>
     <div>
       <font-awesome-icon :icon="['fas', 'home']" size="2x" class="me-3 align-middle" />
-      <address class="d-inline">SkyPark, Bratislava, SLOVAKIA</address>
-      <p></p>
+      <address class="d-inline">{{ address }}</address>
     </div>
   </section>
 </template>
@@ -33,10 +32,18 @@ import { faCalendar, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(faCalendar, faPhone, faHome, faEnvelope);
 
+// Application Data
+import { address, email, phone } from '@/data/consts';
+
 export default {
   name: 'ContactsBlock',
   props: {
     emailSubject: String,
   },
+  data: () => ({
+    address,
+    email,
+    phone,
+  }),
 };
 </script>

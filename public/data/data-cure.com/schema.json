@@ -46,28 +46,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
+      "name": "Website is Offline",
       "url": "/data-cure.com",
       "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Download",
-      "url": "/data-cure.com",
-      "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Buy",
-      "url": "/data-cure.com",
-      "seller": {
-        "@type": "Organization",
-        "url": "http://data-cure.com",
-        "name": "Data Cure"
-      },
-      "availability": "OnlineOnly",
-      "priceCurrency": "USD",
-      "price": "39.95"
     }
   ]
 }

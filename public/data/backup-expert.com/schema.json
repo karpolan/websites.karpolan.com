@@ -46,28 +46,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
+      "name": "Website is Offline",
       "url": "/backup-expert.com",
       "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Download",
-      "url": "/backup-expert.com",
-      "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Buy",
-      "url": "/backup-expert.com",
-      "seller": {
-        "@type": "Organization",
-        "url": "https://backup-expert.com",
-        "name": "Backup Expert"
-      },
-      "availability": "OnlineOnly",
-      "priceCurrency": "USD",
-      "price": "19.95"
     }
   ]
 }

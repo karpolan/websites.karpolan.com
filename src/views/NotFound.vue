@@ -35,8 +35,11 @@ library.add(faHome, faEnvelope);
 
 export default {
   name: 'NotFound',
-  metaInfo: {
-    title: 'Page not Found - Websites by KARPOLAN',
+  head() {
+    // @unhead/vue plugin configuration
+    return {
+      title: 'Page not Found - Websites by KARPOLAN',
+    };
   },
 };
 </script>

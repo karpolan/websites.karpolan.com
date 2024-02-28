@@ -46,28 +46,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
+      "name": "Website is Offline",
       "url": "/audio-tags-editor.com",
       "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Download",
-      "url": "/audio-tags-editor.com",
-      "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Buy",
-      "url": "/audio-tags-editor.com",
-      "seller": {
-        "@type": "Organization",
-        "url": "http://audio-tags-editor.com",
-        "name": "Audio Tags Editor"
-      },
-      "availability": "OnlineOnly",
-      "priceCurrency": "USD",
-      "price": "29.95"
     }
   ]
 }

@@ -1,29 +1,29 @@
-import Vue from 'vue';
-
-// Bootstrap
-import BootstrapVue from 'bootstrap-vue';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
-Vue.use(BootstrapVue);
-
-// Font Awesome
+import { createApp } from 'vue';
+import { createHead, VueHeadMixin } from '@unhead/vue';
+// import { createMetaManager } from 'vue-meta';
+// import { plugin as vueMetaPlugin } from 'vue-meta';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-Vue.component('font-awesome-icon', FontAwesomeIcon);
-
-// Vue Meta (<head> manipulation)
-import Meta from 'vue-meta';
-Vue.use(Meta);
-
-// Application
 import App from './App.vue';
 import router from './router';
-import store from './store';
-import './registerServiceWorker';
 
-Vue.config.productionTip = false;
+// Bootstrap
+import 'bootstrap/dist/css/bootstrap.css';
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App),
-}).$mount('#app');
+const app = createApp(App);
+app.use(router);
+
+// @unhead/vue
+const head = createHead();
+app.use(head);
+app.mixin(VueHeadMixin); // Takes data from head() method of the page/view component
+
+// vue-meta@next
+// const metaManager = createMetaManager();
+// app.use(vueMetaPlugin);
+// app.use(metaManager);
+
+app.component('font-awesome-icon', FontAwesomeIcon); // Register <font-awesome-icon /> component
+app.mount('#app');
+
+// Bootstrap
+import 'bootstrap/dist/js/bootstrap.js';

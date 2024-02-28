@@ -1,5 +1,5 @@
 <template>
-  <div class="contact container-xl text-left py-3">
+  <div class="contact container-sm text-left py-3">
     <main>
       <div class="row contact-info">
         <div class="col-12">
@@ -39,13 +39,18 @@ import ContactForm from '@/components/ContactForm.vue';
 
 export default {
   name: 'ContactPage',
+
   components: {
     ContactForm,
     SocialIcons,
   },
-  metaInfo: {
-    title: 'Contact - Websites by KARPOLAN',
-    link: [{ rel: 'canonical', href: 'https://websites.karpolan.com/contact/index.html' }],
+
+  head() {
+    // @unhead/vue plugin configuration
+    return {
+      title: 'Contact - Websites by KARPOLAN',
+      link: [{ rel: 'canonical', href: 'https://websites.karpolan.com/contact/index.html' }],
+    };
   },
 };
 </script>

@@ -5,13 +5,15 @@
         <div class="col-md-3 d-none d-md-block">
           <ul class="list-unstyled">
             <li>
-              <a href="https://software.karpolan.com" :title="'Software created by ' + name">Software</a>
+              <app-link to="https://software.karpolan.com" target="" :title="'Software created by ' + name"
+                >Software</app-link
+              >
             </li>
             <li>
-              <router-link to="/" :title="'Websites created by ' + name">Websites</router-link>
+              <app-link to="/" :title="'Websites created by ' + name">Websites</app-link>
             </li>
             <li>
-              <a href="https://services.karpolan.com" :title="'Services created by ' + name">Services</a>
+              <app-link to="https://karpolan.com" target="" title="Personal website">Personal</app-link>
             </li>
           </ul>
         </div>
@@ -19,27 +21,13 @@
         <div class="col-md-3 d-none d-md-block">
           <ul class="list-unstyled">
             <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://book-product.karpolan.com"
-                :title="'Books by ' + name"
-                >Books</a
-              >
+              <app-link to="https://book-product.karpolan.com" :title="'Books by ' + name">Books</app-link>
             </li>
             <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://karpolan.blogspot.com"
-                :title="'Articles by ' + name"
-                >Articles</a
-              >
+              <app-link to="https://karpolan.blogspot.com" :title="'Articles by ' + name">Articles</app-link>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://blog.karpolan.com" :title="'Blog by ' + name"
-                >Blog</a
-              >
+              <app-link to="https://blog.karpolan.com" :title="'Blog by ' + name">Blog</app-link>
             </li>
           </ul>
         </div>
@@ -54,7 +42,7 @@
 
           <div class="copyright pb-3 d-none d-sm-block">
             Copyright &copy; 1996-{{ new Date().getFullYear() + ' ' }}
-            <a target="_blank" rel="noopener noreferrer" href="https://karpolan.com/">KARPOLAN</a>
+            <app-link to="https://karpolan.com/" target="">KARPOLAN</app-link>
           </div>
         </div>
       </div>
@@ -63,8 +51,7 @@
 </template>
 
 <script>
-import SocialIcon from './SocialIcon';
-import '@/assets/social-colors.css'; // Colors for social icons
+import SocialIcon from './SocialIcon.vue';
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -72,10 +59,16 @@ import { faLinkedin, faFacebook, faTwitter, faGithub } from '@fortawesome/free-b
 library.add(faLinkedin, faFacebook, faTwitter, faGithub);
 
 // Application Data
-import { name, linkedin, facebook, twitter /*, github*/ } from '@/data/consts';
+import { name, linkedin, facebook, twitter } from '@/data/consts';
+import AppLink from './AppLink.vue';
 
 export default {
   name: 'SiteFooter',
+
+  components: {
+    AppLink,
+    SocialIcon,
+  },
 
   data: () => ({
     name,
@@ -84,9 +77,5 @@ export default {
     twitter,
     github: 'https://github.com/karpolan/websites.karpolan.com',
   }),
-
-  components: {
-    SocialIcon,
-  },
 };
 </script>

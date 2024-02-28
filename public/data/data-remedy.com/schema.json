@@ -46,28 +46,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
+      "name": "Website is Offline",
       "url": "/data-remedy.com",
       "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Download",
-      "url": "/data-remedy.com",
-      "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Buy",
-      "url": "/data-remedy.com",
-      "seller": {
-        "@type": "Organization",
-        "url": "http://data-remedy.com",
-        "name": "Data Remedy"
-      },
-      "availability": "OnlineOnly",
-      "priceCurrency": "USD",
-      "price": "139"
     }
   ]
 }

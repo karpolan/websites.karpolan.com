@@ -1,47 +1,47 @@
 <template>
   <div>
-    <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-      <b-form-group id="input-group-name" label="Name" label-for="input-name">
-        <b-form-input id="input-name" v-model="form.name" placeholder="Your name"></b-form-input>
-      </b-form-group>
+    <form @submit="onSubmit" @reset="onReset" v-if="show">
+      <div class="mb-3">
+        <label for="input-name" class="form-label">Name</label>
+        <input v-model="form.name" placeholder="Your name" id="input-name" class="form-control" />
+      </div>
 
-      <b-form-group
-        id="input-group-email"
-        label="E-mail"
-        label-for="input-email"
-        _description="We'll never share your email with anyone else."
-      >
-        <b-form-input
-          id="input-email"
+      <div class="mb-3">
+        <label for="input-email" class="form-label">E-mail *</label>
+        <input
           v-model="form.email"
-          type="email"
-          required
           placeholder="name@example.com"
-        ></b-form-input>
-      </b-form-group>
-
-      <b-form-group id="input-group-message" label="Message" label-for="input-message">
-        <b-form-textarea
-          id="input-message"
-          v-model="form.message"
-          rows="3"
           required
+          type="email"
+          id="input-email"
+          class="form-control"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="input-message" class="form-label">Message *</label>
+        <textarea
+          v-model="form.message"
           placeholder="Please enter your message here..."
-        ></b-form-textarea>
-      </b-form-group>
+          required
+          id="input-message"
+          class="form-control"
+          rows="3"
+        ></textarea>
+      </div>
 
       <div v-if="sent" class="alert alert-success" role="alert">Your message has been sent successfully.</div>
 
-      <b-button type="reset" variant="outline-danger">Reset</b-button>
-      <b-button class="float-right" type="submit" variant="outline-primary">Submit</b-button>
-    </b-form>
+      <button type="reset" class="btn btn-outline-danger">Reset</button>
+      <button type="submit" class="btn btn-outline-primary float-end">Submit</button>
+    </form>
   </div>
 </template>
 
 <script>
-import Vue from 'vue';
-import { BFormTextarea } from 'bootstrap-vue';
-Vue.component('b-form-textarea', BFormTextarea);
+// TODO: replace
+// import { BFormTextarea } from 'bootstrap-vue';
+// Vue.component('b-form-textarea', BFormTextarea);
 
 export default {
   name: 'ContactForm',
@@ -74,7 +74,7 @@ export default {
     },
 
     /**
-     * Adds requered integration scripts into <head> and/or <body>.
+     * Adds requeued EmailJs integration scripts into <head> and/or <body>.
      */
     addIntgrationScripts() {
       const script = document.createElement('script');
