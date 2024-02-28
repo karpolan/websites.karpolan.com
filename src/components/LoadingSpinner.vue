@@ -1,7 +1,9 @@
 <template>
-  <b-spinner v-if="show" class="d-block mx-auto" variant="light" label="Loading..." role="status">
-    <span class="sr-only">Loading...</span>
-  </b-spinner>
+  <div class="d-flex justify-content-center">
+    <div v-if="show" class="spinner-border text-info" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
 </template>
 
 <script>

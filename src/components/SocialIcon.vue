@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import '@/assets/social-colors.css'; // Colors for social icons
+
 export default {
   name: 'SocialIcon',
   props: {

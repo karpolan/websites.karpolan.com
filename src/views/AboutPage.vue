@@ -7,7 +7,7 @@
           <source class="media-lg" media="(min-width: 992px)" srcset="/img/about/720.jpg" />
           <source class="media-md" media="(min-width: 768px)" srcset="/img/about/640.jpg" />
           <source class="media-sm" media="(min-width: 576px)" srcset="/img/about/640.jpg" />
-          <img class="img-fluid rounded" src="/img/about/480.jpg" alt="Anton Karpenko" />
+          <img class="img-fluid rounded" src="/img/about/480.jpg" :alt="name" />
         </picture>
       </section>
 
@@ -15,10 +15,10 @@
         <div class="offset-md-1">
           <section class="intro">
             <h6 class="d-none d-md-block">Hello everybody, I am</h6>
-            <h3>Anton Karpenko</h3>
+            <h3>{{ name }}</h3>
             <h4>Professional Webmaster</h4>
             <p>
-              I participated in the creation of many websites, ecomerce portals, SaaS, landing pages, advertising
+              I participated in the creation of many websites, e-commerce portals, SaaS, landing pages, advertising
               materials and other web resources. I created the first online page in 1996 and still love to make
               websites.
             </p>
@@ -26,7 +26,7 @@
 
           <ContactsBlock emailSubject="From WEBSITES.KARPOLAN.COM About" />
 
-          <section class="social">
+          <section class="social mt-3">
             <p>
               Follow me on any social network you want. I am
               <b>KARPOLAN</b> everywhere.
@@ -60,9 +60,7 @@
             </li>
             <li>
               <b><a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com">Bootstrap</a></b>
-              - visual styles are provided by
-              <a target="_blank" rel="noopener noreferrer" href="https://bootstrap-vue.js.org">Bootstrap + Vue</a>
-              library.
+              - visual styles are provided by the Bootstrap v5+ library.
             </li>
             <li>
               <b><a target="_blank" rel="noopener noreferrer" href="https://fontawesome.com/">Font Awesome</a></b>
@@ -90,16 +88,26 @@
 <script>
 import SocialIcons from '@/components/SocialIcons.vue';
 import ContactsBlock from '@/components/ContactsBlock.vue';
+import { name } from '@/data/consts';
 
 export default {
   name: 'AboutPage',
+
   components: {
     SocialIcons,
     ContactsBlock,
   },
-  metaInfo: {
-    title: 'About - Websites by KARPOLAN',
-    link: [{ rel: 'canonical', href: 'https://websites.karpolan.com/about/index.html' }],
+
+  data: () => ({
+    name,
+  }),
+
+  head() {
+    // @unhead/vue plugin configuration
+    return {
+      title: 'About - Websites by KARPOLAN',
+      link: [{ rel: 'canonical', href: 'https://websites.karpolan.com/about/index.html' }],
+    };
   },
 };
 </script>

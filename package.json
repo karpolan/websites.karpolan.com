@@ -1,7 +1,8 @@
 {
   "name": "websites.karpolan.com",
   "description": "Web application for websites.karpolan.com",
-  "version": "0.8.57",
+  "version": "1.0.77",
+  "type": "module",
   "private": true,
   "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
   "homepage": "https://websites.karpolan.com",
@@ -13,51 +14,38 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/karpolan/websites.karpolan.com"
+    "url": "https://github.com/karpolan/websites.karpolan.com.git"
   },
   "scripts": {
-    "dev": "npm i && npm run serve",
-    "serve": "vue-cli-service serve",
     "prebuild": "npm run update-data",
-    "build": "vue-cli-service build",
-    "postbuild": "npm run make-pwa",
-    "update-data": "cd ./public/data/ && node combine.js && cd ../../",
-    "make-pwa": "workbox generateSW workbox-config.js",
-    "product": "npm run update-data && cross-env NODE_ENV=production vue-cli-service build && workbox generateSW workbox-config.js",
-    "format": "prettier ./src --write",
-    "format:all": "prettier . --write",
-    "lint": "vue-cli-service lint"
+    "build": "vite build",
+    "dev": "vite",
+    "format": "prettier --write src/",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "preview": "vite preview",
+    "prod": "npm run update-data && cross-env NODE_ENV=production npm run build",
+    "update-data": "cd ./public/data/ && node combine.cjs && cd ../../"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-regular-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/vue-fontawesome": "^2.0.10",
-    "bootstrap": "^4.6.2",
-    "bootstrap-vue": "^2.23.1",
-    "core-js": "latest",
-    "register-service-worker": "^1.7.2",
-    "vue": "^2.7.14",
-    "vue-meta": "^2.4.0",
-    "vue-router": "^3.6.5",
-    "vuex": "^3.6.2"
+    "@fortawesome/fontawesome-svg-core": "latest",
+    "@fortawesome/free-brands-svg-icons": "latest",
+    "@fortawesome/free-regular-svg-icons": "latest",
+    "@fortawesome/free-solid-svg-icons": "latest",
+    "@fortawesome/vue-fontawesome": "latest",
+    "@popperjs/core": "latest",
+    "@unhead/vue": "latest",
+    "bootstrap": "latest",
+    "vue": "latest",
+    "vue-router": "latest"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "latest",
-    "@vue/cli-plugin-babel": "latest",
-    "@vue/cli-plugin-eslint": "latest",
-    "@vue/cli-plugin-pwa": "latest",
-    "@vue/cli-service": "latest",
+    "@rushstack/eslint-patch": "latest",
+    "@vitejs/plugin-vue": "latest",
     "@vue/eslint-config-prettier": "latest",
     "cross-env": "latest",
     "eslint": "latest",
-    "eslint-config-prettier": "latest",
-    "eslint-plugin-prettier": "latest",
     "eslint-plugin-vue": "latest",
     "prettier": "latest",
-    "vue-template-compiler": "latest",
-    "workbox-cli": "latest",
-    "workbox-webpack-plugin": "latest"
+    "vite": "latest"
   }
 }

@@ -1,21 +1,19 @@
 <template>
   <div class="product-card">
-    <b-card>
-      <b-card-body>
-        <b-card-title>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
           <router-link :to="link">{{ name }}</router-link>
-        </b-card-title>
-        <b-card-text>
+        </h4>
+        <p class="card-text">
           <router-link :to="link">
-            <b-img class="product-thumb" :src="thumb" :alt="name" />
+            <img :src="thumb" :alt="name" class="product-thumb" />
           </router-link>
           {{ text }}
-          <router-link class="product-button" :to="link">
-            <b-button variant="outline-primary">Details</b-button>
-          </router-link>
-        </b-card-text>
-      </b-card-body>
-    </b-card>
+          <router-link :to="link" class="product-button btn btn-outline-primary" type="button">Details</router-link>
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -29,10 +27,6 @@ export default {
     thumb: String,
     name: String,
     text: String,
-  },
-  data: () => ({}),
-  mounted() {
-    // console.log('mounted(), props: ', this.$props);
   },
 };
 </script>

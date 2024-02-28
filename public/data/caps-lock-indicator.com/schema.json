@@ -13,8 +13,8 @@
   "headline": "",
   "alternativeHeadline": "",
 
-  "dateCreated": "2012-07-19",
-  "expires": "",
+  "dateCreated": "2012",
+  "expires": "2024",
 
   "thumbnailUrl": "https://websites.karpolan.com/data/caps-lock-indicator.com/thumb.jpg",
   "image": [
@@ -47,28 +47,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
-      "url": "https://caps-lock-indicator.com",
+      "name": "Website is Offline",
+      "url": "/caps-lock-indicator.com",
       "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Download",
-      "url": "https://caps-lock-indicator.com/download/",
-      "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Buy",
-      "url": "https://caps-lock-indicator.com/buy/",
-      "seller": {
-        "@type": "Organization",
-        "url": "https://caps-lock-indicator.com",
-        "name": "Caps Lock Indicator"
-      },
-      "availability": "OnlineOnly",
-      "priceCurrency": "USD",
-      "price": "9.95"
     }
   ]
 }

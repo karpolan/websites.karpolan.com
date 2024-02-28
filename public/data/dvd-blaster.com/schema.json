@@ -46,28 +46,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
+      "name": "Website is Offline",
       "url": "/dvd-blaster.com",
       "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Download",
-      "url": "/dvd-blaster.com",
-      "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Buy",
-      "url": "/dvd-blaster.com",
-      "seller": {
-        "@type": "Organization",
-        "url": "http://dvd-blaster.com",
-        "name": "DVD Blaster"
-      },
-      "availability": "OnlineOnly",
-      "priceCurrency": "USD",
-      "price": "19.95"
     }
   ]
 }

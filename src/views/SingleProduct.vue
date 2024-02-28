@@ -2,9 +2,9 @@
   <div class="product container text-left py-3">
     <main>
       <article>
-        <b-alert :show="error" variant="danger" role="alert"
-          >Data loading for "{{ id }}" object failed. Sorry for that :(</b-alert
-        >
+        <div v-if="error" class="alert alert-danger" role="alert">
+          Data loading for "{{ id }}" object failed. Sorry for that :(
+        </div>
 
         <LoadingSpinner :show="!loaded" />
 
@@ -23,31 +23,22 @@
       </article>
     </main>
 
-    <script type="application/ld+json">
-      {{jsonData}}
-    </script>
+    <component :is="'script'" type="application/ld+json">
+      {{ jsonData }}
+    </component>
   </div>
 </template>
 
 <script>
 import { Data } from '@/data';
-import LoadingSpinner from '@/components/LoadingSpinner';
-import ProductDetails from '@/components/ProductDetails';
+import LoadingSpinner from '@/components/LoadingSpinner.vue';
+import ProductDetails from '@/components/ProductDetails.vue';
 
 export default {
   name: 'SingleProduct',
   components: {
     ProductDetails,
     LoadingSpinner,
-  },
-
-  metaInfo() {
-    const title = `${this?.data?.name} - Websites by KARPOLAN`;
-    const link = [{ rel: 'canonical', href: `https://websites.karpolan.com/${this?.id}/index.html` }];
-    return {
-      title,
-      link,
-    };
   },
 
   data: () => ({
@@ -121,6 +112,16 @@ export default {
       }
       // console.log('getDataCallBack() data: ', this.data);
     },
+  },
+
+  head() {
+    // @unhead/vue plugin configuration
+    const title = `${this?.data?.name} - Websites by KARPOLAN`;
+    const link = [{ rel: 'canonical', href: `https://websites.karpolan.com/${this?.id}/index.html` }];
+    return {
+      title,
+      link,
+    };
   },
 };
 </script>

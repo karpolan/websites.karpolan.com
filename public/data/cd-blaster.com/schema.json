@@ -47,28 +47,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
+      "name": "Website is Offline",
       "url": "/cd-blaster.com",
       "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Download",
-      "url": "/cd-blaster.com",
-      "availability": "OnlineOnly"
-    },
-    {
-      "@type": "Offer",
-      "name": "Buy",
-      "url": "/cd-blaster.com",
-      "seller": {
-        "@type": "Organization",
-        "url": "http://cd-blaster.com",
-        "name": "CD Blaster"
-      },
-      "availability": "OnlineOnly",
-      "priceCurrency": "USD",
-      "price": "24.95"
     }
   ]
 }

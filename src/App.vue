@@ -1,27 +1,18 @@
+<script setup>
+import { RouterView } from 'vue-router';
+import SiteHeader from '@/components/SiteHeader.vue';
+import SiteFooter from '@/components/SiteFooter.vue';
+</script>
+
 <template>
-  <div id="app">
+  <div>
     <SiteHeader />
-
-    <router-view />
-
+    <RouterView />
     <SiteFooter />
   </div>
 </template>
 
-<script>
-import SiteHeader from '@/components/SiteHeader';
-import SiteFooter from '@/components/SiteFooter';
-
-export default {
-  name: 'App',
-  components: {
-    SiteHeader,
-    SiteFooter,
-  },
-};
-</script>
-
-<style>
+<style scoped>
 body {
   margin: 0;
   padding: 0;
@@ -33,9 +24,5 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-#app {
-  text-align: left;
 }
 </style>

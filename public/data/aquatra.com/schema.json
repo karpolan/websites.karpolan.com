@@ -42,7 +42,7 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Visit",
+      "name": "Website is Offline",
       "url": "/aquatra.com",
       "availability": "OnlineOnly"
     }
