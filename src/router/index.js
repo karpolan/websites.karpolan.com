@@ -7,8 +7,8 @@ import SingleProduct from '@/views/SingleProduct.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  // linkActiveClass: 'active', // Make Bootstrap compatible
-  // linkExactActiveClass: 'active', // Make Bootstrap compatible
+  // Don't! linkActiveClass: 'active', // Make Bootstrap compatible
+  // Don't! linkExactActiveClass: 'active', // Make Bootstrap compatible
   routes: [
     {
       path: '/',
@@ -45,10 +45,5 @@ const router = createRouter({
     },
   ],
 });
-
-// router.resolve({
-//   name: 'not-found',
-//   params: { pathMatch: ['not', 'found'] },
-// }).href; // '/not/found'
 
 export default router;

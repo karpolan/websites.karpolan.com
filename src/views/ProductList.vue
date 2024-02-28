@@ -59,8 +59,6 @@ export default {
         this.loaded = true;
         this.error = true;
       }
-      // console.log('getDataCallBack() data: ', this.data);
-      // this.error = true;
     },
   },
 

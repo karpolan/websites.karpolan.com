@@ -39,10 +39,6 @@
 </template>
 
 <script>
-// TODO: replace
-// import { BFormTextarea } from 'bootstrap-vue';
-// Vue.component('b-form-textarea', BFormTextarea);
-
 export default {
   name: 'ContactForm',
   data() {
