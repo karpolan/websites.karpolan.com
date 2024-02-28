@@ -1,16 +1,12 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import ProductList from '@/views/ProductList';
 import SingleProduct from '@/views/SingleProduct';
 import AboutPage from '@/views/AboutPage';
 import ContactPage from '@/views/ContactPage';
 import NotFound from '@/views/NotFound';
 
-Vue.use(Router);
-
-export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -34,6 +30,14 @@ export default new Router({
     { path: '/index.*', redirect: '/' },
     { path: '/404', component: NotFound },
     { path: '/:id/', alias: '/:id/index.html', component: SingleProduct },
-    { path: '*', component: NotFound },
+    // was: { path: '*', component: NotFound },
+    { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFound },
   ],
 });
+
+// router.resolve({
+//   name: 'not-found',
+//   params: { pathMatch: ['not', 'found'] },
+// }).href; // '/not/found'
+
+export default router;

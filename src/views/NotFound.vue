@@ -11,11 +11,11 @@
 
             <div class="error-actions">
               <router-link class="btn btn-primary" to="/">
-                <font-awesome-icon :icon="['fas', 'home']" size="lg" class="mr-2 _align-middle" />
+                <font-awesome-icon :icon="['fas', 'home']" size="lg" class="me-2 _align-middle" />
                 <span>Take Me Home</span>
               </router-link>
               <router-link class="btn btn-outline-secondary" to="/contact/">
-                <font-awesome-icon :icon="['far', 'envelope']" size="lg" class="mr-2 align-middle" />
+                <font-awesome-icon :icon="['far', 'envelope']" size="lg" class="me-2 align-middle" />
                 <span>Contact Support</span>
               </router-link>
             </div>

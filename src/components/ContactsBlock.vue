@@ -1,15 +1,15 @@
 <template>
   <section class="contacts">
     <p>
-      <font-awesome-icon :icon="['far', 'calendar']" size="2x" class="mr-3 align-middle" />
+      <font-awesome-icon :icon="['far', 'calendar']" size="2x" class="me-3 align-middle" />
       <time class="align-middle" datetime="1977-04-23 02:15">April 23, 1977</time>
     </p>
     <p>
-      <font-awesome-icon :icon="['fas', 'phone']" size="2x" class="mr-3 align-middle" />
+      <font-awesome-icon :icon="['fas', 'phone']" size="2x" class="me-3 align-middle" />
       <a class="align-middle" rel="noopener noreferrer" href="tel:+421919321977">+421 919 321 977</a>
     </p>
     <p>
-      <font-awesome-icon :icon="['far', 'envelope']" size="2x" class="mr-3 align-middle" />
+      <font-awesome-icon :icon="['far', 'envelope']" size="2x" class="me-3 align-middle" />
       <a
         class="align-middle"
         target="_blank"
@@ -19,7 +19,7 @@
       >
     </p>
     <div>
-      <font-awesome-icon :icon="['fas', 'home']" size="2x" class="mr-3 align-middle" />
+      <font-awesome-icon :icon="['fas', 'home']" size="2x" class="me-3 align-middle" />
       <address class="d-inline">SkyPark, Bratislava, SLOVAKIA</address>
       <p></p>
     </div>

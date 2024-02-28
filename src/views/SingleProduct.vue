@@ -23,9 +23,11 @@
       </article>
     </main>
 
-    <script type="application/ld+json">
-      {{jsonData}}
-    </script>
+    <component :is="'script'" type="application/ld+json">
+      <!-- <script type="application/ld+json"> -->
+      {{ jsonData }}
+      <!-- </script> -->
+    </component>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="contact container text-left py-3">
+  <div class="contact container-xl text-left py-3">
     <main>
       <div class="row contact-info">
         <div class="col-12">
